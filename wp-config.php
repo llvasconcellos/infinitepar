@@ -1,5 +1,5 @@
 <?php
-/** 
+/**
  * As configurações básicas do WordPress.
  *
  * Esse arquivo contém as seguintes configurações: configurações de MySQL, Prefixo de Tabelas,
@@ -76,6 +76,6 @@ define('WP_DEBUG', false);
 /** Caminho absoluto para o diretório WordPress. */
 if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
-	
+
 /** Configura as variáveis do WordPress e arquivos inclusos. */
 require_once(ABSPATH . 'wp-settings.php');
