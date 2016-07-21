@@ -71,7 +71,7 @@ class WP_Clean_Slate {
 			add_action( 'wp_clean_slate_head', array( $this, 'addViewport' ) );
 
 		// Override Theme
-		add_filter( 'template_include', array( $this, 'injectTemplate' ) );
+		add_filter( 'template_include', array( $this, 'injectTemplate' ), 999999 );
 
 
 		// Remove ALL actions to strip 3rd party plugins and unwanted WP functions
@@ -88,7 +88,9 @@ class WP_Clean_Slate {
 		if ($this->options['showAdminBar'] == false) {
 			add_filter( 'show_admin_bar', '__return_false' );
 		} else {
-			_wp_admin_bar_init();
+			if ( !class_exists('WP_Admin_Bar') ) {
+				_wp_admin_bar_init();
+			}
 			add_action('wp_enqueue_scripts_clean', array( $this, 'adminBarEnqueue' ));
 		}
 
@@ -197,7 +199,7 @@ class WP_Clean_Slate {
 		add_action( 'wp_footer', 'wp_print_footer_scripts', 20 );
 		add_action( 'wp_footer', 'wp_admin_bar_render', 1000 );
 
-		if ($this->options['mediaTemplates']) {
+		if ($this->options['mediaTemplates'] && function_exists( 'wp_underscore_playlist_templates' ) && function_exists( 'wp_print_media_templates' ) ) {
 			add_action( 'wp_footer', 'wp_underscore_playlist_templates', 0 );
 			add_action( 'wp_footer', 'wp_print_media_templates' );
 		}

@@ -54,8 +54,13 @@ window.csg = window.csg || {};
 
   var Controller = function( wrapper ) {
 
-    this.shortcodes = new ShortcodeCollection();
-    this.shortcodes.fetch( {reset: true } );
+
+
+    $(window).on( 'load', function(){
+    	this.shortcodes = new ShortcodeCollection();
+    	this.shortcodes.fetch( {reset: true } );
+    }.bind(this));
+
 
     $(document).on( 'click', '#cs-insert-shortcode-button', function( e ){
       e.preventDefault();
@@ -440,10 +445,16 @@ module.exports = Backbone.View.extend({
 
     var atts = {};
     var content = '';
+    var closeShortcode = this.collection.selected.get( 'container' ) || false;
+
     this.controls.each(function(control){
 
       var data = control.get('data'),
           name = control.get('param_name');
+
+      if ( name == 'content' ) {
+        closeShortcode = true;
+      }
 
       if ( data !== undefined && data != '' ) {
 
@@ -463,10 +474,9 @@ module.exports = Backbone.View.extend({
 
     var tag = this.collection.selected.get( 'id' );
 
-    output = '[' + tag;
-    closingTag = '';
+    var output = '[' + tag;
 
-    _(atts).each(function(value, name){
+    _( atts ).each(function(value, name){
       output += ' '+name + '="' + value +'"';
     });
 
@@ -474,10 +484,8 @@ module.exports = Backbone.View.extend({
 
     if (content) output += content;
 
-    if (content || this.collection.selected.get( 'content_element' ) ) {
-
-      closingTag = '[/' + tag + ']';
-      output += closingTag;
+    if ( closeShortcode ) {
+      output += '[/' + tag + ']';
     }
 
     console.log( "Inserting Shortcode: " + output );
@@ -780,13 +788,7 @@ __p += '\n<label for="param-' +
 }
 return __p
 };module.exports=templates;
-},{}],"backbone":[function(require,module,exports){
-module.exports = window.Backbone;
-},{}],"jquery":[function(require,module,exports){
-module.exports = window.jQuery;
-},{}],"underscore":[function(require,module,exports){
-module.exports = window._;
-},{}]},{},[1])("underscore")
+},{}]},{},[1])(1)
 });
 //# sourceMappingURL=generator.map
 

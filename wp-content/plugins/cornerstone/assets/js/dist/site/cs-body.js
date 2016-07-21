@@ -7,11 +7,442 @@
 // =============================================================================
 // TABLE OF CONTENTS
 // -----------------------------------------------------------------------------
-//   01. Imports
+//   01. Setup
+//   02. Imports
 // =============================================================================
+
+// Setup
+// =============================================================================
+
+window.csModernizr = window.csModernizr || {};
 
 // Imports
 // =============================================================================
+/*
+* Based on FitText.js 1.2
+*
+* Copyright 2011, Dave Rupert http://daverupert.com
+* Released under the WTFPL license
+* http://sam.zoy.org/wtfpl/
+*
+* Date: Thu May 05 14:23:00 2011 -0600
+*/
+
+(function( $ ){
+
+  $.fn.csFitText = function( kompressor, options ) {
+
+    // Setup options
+    var compressor = kompressor || 1,
+        settings = $.extend({
+          'minFontSize' : Number.NEGATIVE_INFINITY,
+          'maxFontSize' : Number.POSITIVE_INFINITY
+        }, options);
+
+    return this.each(function(){
+
+      // Store the object
+      var $this = $(this);
+
+      // Resizer() resizes items based on the object width divided by the compressor * 10
+      var resizer = function () {
+        $this.css('font-size', Math.max(Math.min($this.width() / (compressor*10), parseFloat(settings.maxFontSize)), parseFloat(settings.minFontSize)));
+      };
+
+      // Call once to set.
+      resizer();
+
+      // Call on resize. Opera debounces their resize by default.
+      $(window).on('resize.fittext orientationchange.fittext', resizer);
+
+
+      $(window).on('fittextReset', function() {
+        $(window).off('resize.fittext orientationchange.fittext', resizer );
+        $this.css( 'font-size', '');
+      });
+
+    });
+
+  };
+
+})( jQuery );
+/*! Backstretch - v2.0.4 - 2013-06-19
+* http://srobbin.com/jquery-plugins/backstretch/
+* Copyright (c) 2013 Scott Robbin; Licensed MIT */
+
+;(function ($, window, undefined) {
+  'use strict';
+
+  /* PLUGIN DEFINITION
+   * ========================= */
+
+  $.fn.backstretch = function (images, options) {
+    // We need at least one image or method name
+    if (images === undefined || images.length === 0) {
+      $.error("No images were supplied for Backstretch");
+    }
+
+    /*
+     * Scroll the page one pixel to get the right window height on iOS
+     * Pretty harmless for everyone else
+    */
+    if ($(window).scrollTop() === 0 ) {
+      window.scrollTo(0, 0);
+    }
+
+    return this.each(function () {
+      var $this = $(this)
+        , obj = $this.data('backstretch');
+
+      // Do we already have an instance attached to this element?
+      if (obj) {
+
+        // Is this a method they're trying to execute?
+        if (typeof images == 'string' && typeof obj[images] == 'function') {
+          // Call the method
+          obj[images](options);
+
+          // No need to do anything further
+          return;
+        }
+
+        // Merge the old options with the new
+        options = $.extend(obj.options, options);
+
+        // Remove the old instance
+        obj.destroy(true);
+      }
+
+      obj = new Backstretch(this, images, options);
+      $this.data('backstretch', obj);
+    });
+  };
+
+  // If no element is supplied, we'll attach to body
+  $.backstretch = function (images, options) {
+    // Return the instance
+    return $('body')
+            .backstretch(images, options)
+            .data('backstretch');
+  };
+
+  // Custom selector
+  $.expr[':'].backstretch = function(elem) {
+    return $(elem).data('backstretch') !== undefined;
+  };
+
+  /* DEFAULTS
+   * ========================= */
+
+  $.fn.backstretch.defaults = {
+      centeredX: true   // Should we center the image on the X axis?
+    , centeredY: true   // Should we center the image on the Y axis?
+    , duration: 5000    // Amount of time in between slides (if slideshow)
+    , fade: 0           // Speed of fade transition between slides
+  };
+
+  /* STYLES
+   * 
+   * Baked-in styles that we'll apply to our elements.
+   * In an effort to keep the plugin simple, these are not exposed as options.
+   * That said, anyone can override these in their own stylesheet.
+   * ========================= */
+  var styles = {
+      wrap: {
+          left: 0
+        , top: 0
+        , overflow: 'hidden'
+        , margin: 0
+        , padding: 0
+        , height: '100%'
+        , width: '100%'
+        , zIndex: -999999
+      }
+    , img: {
+          position: 'absolute'
+        , display: 'none'
+        , margin: 0
+        , padding: 0
+        , border: 'none'
+        , width: 'auto'
+        , height: 'auto'
+        , maxHeight: 'none'
+        , maxWidth: 'none'
+        , zIndex: -999999
+      }
+  };
+
+  /* CLASS DEFINITION
+   * ========================= */
+  var Backstretch = function (container, images, options) {
+    this.options = $.extend({}, $.fn.backstretch.defaults, options || {});
+
+    /* In its simplest form, we allow Backstretch to be called on an image path.
+     * e.g. $.backstretch('/path/to/image.jpg')
+     * So, we need to turn this back into an array.
+     */
+    this.images = $.isArray(images) ? images : [images];
+
+    // Preload images
+    $.each(this.images, function () {
+      $('<img />')[0].src = this;
+    });    
+
+    // Convenience reference to know if the container is body.
+    this.isBody = container === document.body;
+
+    /* We're keeping track of a few different elements
+     *
+     * Container: the element that Backstretch was called on.
+     * Wrap: a DIV that we place the image into, so we can hide the overflow.
+     * Root: Convenience reference to help calculate the correct height.
+     */
+    this.$container = $(container);
+    this.$root = this.isBody ? supportsFixedPosition ? $(window) : $(document) : this.$container;
+
+    // Don't create a new wrap if one already exists (from a previous instance of Backstretch)
+    var $existing = this.$container.children(".backstretch").first();
+    this.$wrap = $existing.length ? $existing : $('<div class="backstretch"></div>').css(styles.wrap).appendTo(this.$container);
+
+    // Non-body elements need some style adjustments
+    if (!this.isBody) {
+      // If the container is statically positioned, we need to make it relative,
+      // and if no zIndex is defined, we should set it to zero.
+      var position = this.$container.css('position')
+        , zIndex = this.$container.css('zIndex');
+
+      this.$container.css({
+          position: position === 'static' ? 'relative' : position
+        , zIndex: zIndex === 'auto' ? 0 : zIndex
+        , background: 'none'
+      });
+      
+      // Needs a higher z-index
+      this.$wrap.css({zIndex: -999998});
+    }
+
+    // Fixed or absolute positioning?
+    this.$wrap.css({
+      position: this.isBody && supportsFixedPosition ? 'fixed' : 'absolute'
+    });
+
+    // Set the first image
+    this.index = 0;
+    this.show(this.index);
+
+    // Listen for resize
+    $(window).on('resize.backstretch', $.proxy(this.resize, this))
+             .on('orientationchange.backstretch', $.proxy(function () {
+                // Need to do this in order to get the right window height
+                if (this.isBody && window.pageYOffset === 0) {
+                  window.scrollTo(0, 1);
+                  this.resize();
+                }
+             }, this));
+  };
+
+  /* PUBLIC METHODS
+   * ========================= */
+  Backstretch.prototype = {
+      resize: function () {
+        try {
+          var bgCSS = {left: 0, top: 0}
+            , rootWidth = this.isBody ? this.$root.width() : this.$root.innerWidth()
+            , bgWidth = rootWidth
+            , rootHeight = this.isBody ? ( window.innerHeight ? window.innerHeight : this.$root.height() ) : this.$root.innerHeight()
+            , bgHeight = bgWidth / this.$img.data('ratio')
+            , bgOffset;
+
+            // Make adjustments based on image ratio
+            if (bgHeight >= rootHeight) {
+                bgOffset = (bgHeight - rootHeight) / 2;
+                if(this.options.centeredY) {
+                  bgCSS.top = '-' + bgOffset + 'px';
+                }
+            } else {
+                bgHeight = rootHeight;
+                bgWidth = bgHeight * this.$img.data('ratio');
+                bgOffset = (bgWidth - rootWidth) / 2;
+                if(this.options.centeredX) {
+                  bgCSS.left = '-' + bgOffset + 'px';
+                }
+            }
+
+            this.$wrap.css({width: rootWidth, height: rootHeight})
+                      .find('img:not(.deleteable)').css({width: bgWidth, height: bgHeight}).css(bgCSS);
+        } catch(err) {
+            // IE7 seems to trigger resize before the image is loaded.
+            // This try/catch block is a hack to let it fail gracefully.
+        }
+
+        return this;
+      }
+
+      // Show the slide at a certain position
+    , show: function (newIndex) {
+
+        // Validate index
+        if (Math.abs(newIndex) > this.images.length - 1) {
+          return;
+        }
+
+        // Vars
+        var self = this
+          , oldImage = self.$wrap.find('img').addClass('deleteable')
+          , evtOptions = { relatedTarget: self.$container[0] };
+
+        // Trigger the "before" event
+        self.$container.trigger($.Event('backstretch.before', evtOptions), [self, newIndex]); 
+
+        // Set the new index
+        this.index = newIndex;
+
+        // Pause the slideshow
+        clearInterval(self.interval);
+
+        // New image
+        self.$img = $('<img />')
+                      .css(styles.img)
+                      .bind('load', function (e) {
+                        var imgWidth = this.width || $(e.target).width()
+                          , imgHeight = this.height || $(e.target).height();
+                        
+                        // Save the ratio
+                        $(this).data('ratio', imgWidth / imgHeight);
+
+                        // Show the image, then delete the old one
+                        // "speed" option has been deprecated, but we want backwards compatibilty
+                        $(this).fadeIn(self.options.speed || self.options.fade, function () {
+                          oldImage.remove();
+
+                          // Resume the slideshow
+                          if (!self.paused) {
+                            self.cycle();
+                          }
+
+                          // Trigger the "after" and "show" events
+                          // "show" is being deprecated
+                          $(['after', 'show']).each(function () {
+                            self.$container.trigger($.Event('backstretch.' + this, evtOptions), [self, newIndex]);
+                          });
+                        });
+
+                        // Resize
+                        self.resize();
+                      })
+                      .appendTo(self.$wrap);
+
+        // Hack for IE img onload event
+        self.$img.attr('src', self.images[newIndex]);
+        return self;
+      }
+
+    , next: function () {
+        // Next slide
+        return this.show(this.index < this.images.length - 1 ? this.index + 1 : 0);
+      }
+
+    , prev: function () {
+        // Previous slide
+        return this.show(this.index === 0 ? this.images.length - 1 : this.index - 1);
+      }
+
+    , pause: function () {
+        // Pause the slideshow
+        this.paused = true;
+        return this;
+      }
+
+    , resume: function () {
+        // Resume the slideshow
+        this.paused = false;
+        this.next();
+        return this;
+      }
+
+    , cycle: function () {
+        // Start/resume the slideshow
+        if(this.images.length > 1) {
+          // Clear the interval, just in case
+          clearInterval(this.interval);
+
+          this.interval = setInterval($.proxy(function () {
+            // Check for paused slideshow
+            if (!this.paused) {
+              this.next();
+            }
+          }, this), this.options.duration);
+        }
+        return this;
+      }
+
+    , destroy: function (preserveBackground) {
+        // Stop the resize events
+        $(window).off('resize.backstretch orientationchange.backstretch');
+
+        // Clear the interval
+        clearInterval(this.interval);
+
+        // Remove Backstretch
+        if(!preserveBackground) {
+          this.$wrap.remove();          
+        }
+        this.$container.removeData('backstretch');
+      }
+  };
+
+  /* SUPPORTS FIXED POSITION?
+   *
+   * Based on code from jQuery Mobile 1.1.0
+   * http://jquerymobile.com/
+   *
+   * In a nutshell, we need to figure out if fixed positioning is supported.
+   * Unfortunately, this is very difficult to do on iOS, and usually involves
+   * injecting content, scrolling the page, etc.. It's ugly.
+   * jQuery Mobile uses this workaround. It's not ideal, but works.
+   *
+   * Modified to detect IE6
+   * ========================= */
+
+  var supportsFixedPosition = (function () {
+    var ua = navigator.userAgent
+      , platform = navigator.platform
+        // Rendering engine is Webkit, and capture major version
+      , wkmatch = ua.match( /AppleWebKit\/([0-9]+)/ )
+      , wkversion = !!wkmatch && wkmatch[ 1 ]
+      , ffmatch = ua.match( /Fennec\/([0-9]+)/ )
+      , ffversion = !!ffmatch && ffmatch[ 1 ]
+      , operammobilematch = ua.match( /Opera Mobi\/([0-9]+)/ )
+      , omversion = !!operammobilematch && operammobilematch[ 1 ]
+      , iematch = ua.match( /MSIE ([0-9]+)/ )
+      , ieversion = !!iematch && iematch[ 1 ];
+
+    return !(
+      // iOS 4.3 and older : Platform is iPhone/Pad/Touch and Webkit version is less than 534 (ios5)
+      ((platform.indexOf( "iPhone" ) > -1 || platform.indexOf( "iPad" ) > -1  || platform.indexOf( "iPod" ) > -1 ) && wkversion && wkversion < 534) ||
+      
+      // Opera Mini
+      (window.operamini && ({}).toString.call( window.operamini ) === "[object OperaMini]") ||
+      (operammobilematch && omversion < 7458) ||
+      
+      //Android lte 2.1: Platform is Android and Webkit version is less than 533 (Android 2.2)
+      (ua.indexOf( "Android" ) > -1 && wkversion && wkversion < 533) ||
+      
+      // Firefox Mobile before 6.0 -
+      (ffversion && ffversion < 6) ||
+      
+      // WebOS less than 3
+      ("palmGetResource" in window && wkversion && wkversion < 534) ||
+      
+      // MeeGo
+      (ua.indexOf( "MeeGo" ) > -1 && ua.indexOf( "NokiaBrowser/8.5.0" ) > -1) ||
+      
+      // IE6
+      (ieversion && ieversion <= 6)
+    );
+  }());
+
+}(jQuery, window));
 /*
  * jQuery Easing v1.3 - http://gsgd.co.uk/sandbox/jquery/easing/
  *
@@ -217,7 +648,6 @@ jQuery.extend( jQuery.easing,
  * OF THE POSSIBILITY OF SUCH DAMAGE. 
  *
  */
-
 /*
  * jQuery FlexSlider v2.2.2
  * Copyright 2012 WooThemes
@@ -1370,7 +1800,6 @@ jQuery.extend( jQuery.easing,
     }
   };
 })(jQuery);
-
 // Generated by CoffeeScript 1.6.2
 /*
 jQuery Waypoints - v2.0.4
@@ -1891,7 +2320,6 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
   });
 
 }).call(this);
-
 /** @preserve jQuery animateNumber plugin v0.0.10
  * (c) 2013, Alexandr Borisov.
  * https://github.com/aishek/jquery-animateNumber
@@ -2057,7 +2485,6 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
   };
 
 }(jQuery));
-
 // The MIT License (MIT)
 
 // Typed.js | Copyright (c) 2014 Matt Boldt | www.mattboldt.com
@@ -2120,6 +2547,9 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
         // amount of time to wait before backspacing
         this.backDelay = this.options.backDelay;
 
+        // div containing strings
+        this.stringsElement = this.options.stringsElement;
+
         // input strings of text
         this.strings = this.options.strings;
 
@@ -2145,6 +2575,11 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
         // custom cursor
         this.cursorChar = this.options.cursorChar;
 
+        // shuffle the strings
+        this.shuffle = this.options.shuffle;
+        // the order of strings
+        this.sequence = [];
+
         // All systems go!
         this.build();
     };
@@ -2155,21 +2590,35 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
 
         ,
         init: function() {
-            // begin the loop w/ first current string (global self.string)
+            // begin the loop w/ first current string (global self.strings)
             // current string will be passed as an argument each time after this
             var self = this;
             self.timeout = setTimeout(function() {
+                for (var i=0;i<self.strings.length;++i) self.sequence[i]=i;
+
+                // shuffle the array if true
+                if(self.shuffle) self.sequence = self.shuffleArray(self.sequence);
+
                 // Start typing
-                self.typewrite(self.strings[self.arrayPos], self.strPos);
+                self.typewrite(self.strings[self.sequence[self.arrayPos]], self.strPos);
             }, self.startDelay);
         }
 
         ,
         build: function() {
+            var self = this;
             // Insert cursor
             if (this.showCursor === true) {
                 this.cursor = $("<span class=\"typed-cursor\">" + this.cursorChar + "</span>");
                 this.el.after(this.cursor);
+            }
+            if (this.stringsElement) {
+                self.strings = [];
+                this.stringsElement.hide();
+                var strings = this.stringsElement.find('p');
+                $.each(strings, function(key, value){
+                    self.strings.push($(value).html());
+                });
             }
             this.init();
         }
@@ -2359,14 +2808,33 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
 
                     if (self.arrayPos === self.strings.length) {
                         self.arrayPos = 0;
+
+                        // Shuffle sequence again
+                        if(self.shuffle) self.sequence = self.shuffleArray(self.sequence);
+
                         self.init();
                     } else
-                        self.typewrite(self.strings[self.arrayPos], curStrPos);
+                        self.typewrite(self.strings[self.sequence[self.arrayPos]], curStrPos);
                 }
 
                 // humanized value for typing
             }, humanize);
 
+        }
+        /**
+         * Shuffles the numbers in the given array.
+         * @param {Array} array
+         * @returns {Array}
+         */
+        ,shuffleArray: function(array) {
+            var tmp, current, top = array.length;
+            if(top) while(--top) {
+                current = Math.floor(Math.random() * (top + 1));
+                tmp = array[current];
+                array[current] = array[top];
+                array[top] = tmp;
+            }
+            return array;
         }
 
         // Start & Stop currently not working
@@ -2416,12 +2884,15 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
 
     $.fn.typed.defaults = {
         strings: ["These are the default values...", "You know what you should do?", "Use your own!", "Have a great day!"],
+        stringsElement: null,
         // typing speed
         typeSpeed: 0,
         // time before typing starts
         startDelay: 0,
         // backspacing speed
         backSpeed: 0,
+        // shuffle the strings
+        shuffle: false,
         // time before backspacing
         backDelay: 500,
         // loop
@@ -2448,8 +2919,6 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
 
 
 }(window.jQuery);
-
-
 /* ========================================================================
  * Bootstrap: alert.js v3.2.0
  * http://getbootstrap.com/javascript/#alerts
@@ -2542,7 +3011,6 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
   $(document).on('click.bs.alert.data-api', dismiss, Alert.prototype.close)
 
 }(jQuery);
-
 /* ========================================================================
  * Bootstrap: collapse.js v3.2.0
  * http://getbootstrap.com/javascript/#collapse
@@ -2713,7 +3181,6 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
   })
 
 }(jQuery);
-
 /* ========================================================================
  * Bootstrap: tab.js v3.2.0
  * http://getbootstrap.com/javascript/#tabs
@@ -2842,7 +3309,6 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
   })
 
 }(jQuery);
-
 /* ========================================================================
  * Bootstrap: transition.js v3.2.0
  * http://getbootstrap.com/javascript/#transitions
@@ -2902,7 +3368,6 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
   })
 
 }(jQuery);
-
 /* ========================================================================
  * Bootstrap: tooltip.js v3.2.0
  * http://getbootstrap.com/javascript/#tooltip
@@ -3360,7 +3825,6 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
   }
 
 }(jQuery);
-
 /* ========================================================================
  * Bootstrap: popover.js v3.2.0
  * http://getbootstrap.com/javascript/#popovers
@@ -3474,9 +3938,80 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
   }
 
 }(jQuery);
+// =============================================================================
+// JS/SRC/SITE/INC/BODY-COLLAPSE.JS
+// -----------------------------------------------------------------------------
+// Custom collapse plugin
+// =============================================================================
 
 // =============================================================================
-// JS/SRC/SITE/INC/X-BODY-CUSTOM.JS
+// TABLE OF CONTENTS
+// -----------------------------------------------------------------------------
+//   01. Collapse
+// =============================================================================
+
+// Collapse
+// =============================================================================
+
+jQuery( function( $ ) {
+
+	$( document ).on( 'click', '[data-cs-collapse-toggle]', function( e ) {
+
+		var $this = $( this );
+		toggle( $this );
+
+		var $linkedSiblings = $this.closest( '[data-cs-collapse-linked]' ).find( '[data-cs-collapse-toggle]' ).not( this );
+		if ( ! $linkedSiblings.length ) {
+			var parentId = $this.data( 'cs-collapse-parent' );
+			if ( parentId ) $linkedSiblings = $this.closest( parentId ).find( '[data-cs-collapse-toggle]' ).not( this );
+		}
+
+		$linkedSiblings.each( function() {
+			toggle( $( this ), false );
+		});
+
+	} );
+
+	function toggle( $toggle, state ) {
+
+		var $content = $toggle.closest( '[data-cs-collapse-group]' ).find( '[data-cs-collapse-content]' );
+		if ( ! $content.length || $content.hasClass( 'collapsing' ) ) return;
+
+		var isOpen = $content.hasClass( 'collapse in' );
+		if ( 'undefined' === typeof state ) state = ! isOpen;
+		$toggle.toggleClass( 'collapsed', ! state );
+
+		if ( state && ! isOpen ) show( $content );
+		if ( ! state && isOpen ) hide( $content );
+
+		function show( $el ) {
+
+			$el.removeClass( 'collapse' ).addClass( 'collapsing' ).height( 0 );
+
+			$el.one( 'csTransitionEnd', function() {
+				$el.removeClass( 'collapsing' ).addClass( 'collapse in' ).height( '' );
+			} ).height( $el[0].scrollHeight ).csEmulateTransitionEnd( 350 );
+
+		}
+
+		function hide( $el ) {
+
+			$el.height( $el.height() )[0].offsetHeight;
+
+			$el.addClass( 'collapsing' ).removeClass( 'collapse' ).removeClass( 'in' );
+
+			$el.height( 0 ).one( 'csTransitionEnd', function() {
+				$el.removeClass( 'collapsing' ).addClass( 'collapse' );
+			}).csEmulateTransitionEnd( 350 );
+
+		}
+
+	}
+
+} );
+
+// =============================================================================
+// JS/SRC/SITE/INC/BODY-CUSTOM.JS
 // -----------------------------------------------------------------------------
 // Includes all miscellaneous, custom functionality to be output near the
 // closing </body> tag.
@@ -3539,17 +4074,11 @@ jQuery(document).ready(function($) {
   };
 
 
-  //
-  // Ensure accordion has proper collapse class.
-  //
 
-  $('.x-accordion-toggle[data-parent]').on('click', function() {
-    $(this).closest('.x-accordion').find('.x-accordion-toggle:not(.collapsed)').addClass('collapsed');
-  });
 
 });
 // =============================================================================
-// JS/SRC/SITE/INC/X-BODY-DATA-ATTR-API.JS
+// JS/SRC/SITE/INC/BODY-DATA-ATTR-API.JS
 // -----------------------------------------------------------------------------
 // Sets up the data attribute API used by certain shortcodes to ease the
 // implementation of specific functionality.
@@ -3657,7 +4186,7 @@ window.xData = window.xData || {};
 
 })( xData, jQuery );
 // =============================================================================
-// JS/SRC/SITE/INC/X-BODY-FLEXSLIDER.JS
+// JS/SRC/SITE/INC/BODY-FLEXSLIDER.JS
 // -----------------------------------------------------------------------------
 // Sets up Flexslider for certain theme features such as the "Gallery" post
 // format and portfolio gallery.
@@ -3686,10 +4215,74 @@ jQuery(window).load(function() {
   });
 
 });
+// =============================================================================
+// JS/SRC/SITE/INC/BODY-TRANSITION.JS
+// -----------------------------------------------------------------------------
+// Custom CSS Transition Event based on Modernizr and Bootstrap
+// =============================================================================
+
+// =============================================================================
+// TABLE OF CONTENTS
+// -----------------------------------------------------------------------------
+//   01. Transitions
+// =============================================================================
+
+// Transitions
+// =============================================================================
+
+( function( $ ) {
+
+  function transitionEnd() {
+    var el = document.createElement( 'div' );
+
+    var transEndEventNames = {
+      WebkitTransition: 'webkitTransitionEnd',
+      MozTransition:    'transitionend',
+      OTransition:      'oTransitionEnd otransitionend',
+      transition:       'transitionend'
+    };
+
+    for ( var name in transEndEventNames ) {
+      if ( undefined !== el.style[name] ) {
+        return { end: transEndEventNames[name] };
+      }
+    }
+
+    return false;
+  }
+
+  // http://blog.alexmaccaw.com/css-transitions
+  $.fn.csEmulateTransitionEnd = function( duration ) {
+    var called = false;
+    var $el = this;
+    $( this ).one( 'csTransitionEnd', function() {
+      called = true;
+    } );
+    setTimeout( function() {
+      if ( ! called ) $( $el ).trigger( $.support.transition.end );
+    }, duration );
+    return this;
+  };
+
+  $( function() {
+    $.support.transition = transitionEnd();
+
+    if ( ! $.support.transition ) return;
+
+    $.event.special.csTransitionEnd = {
+      bindType: $.support.transition.end,
+      delegateType: $.support.transition.end,
+      handle: function( e ) {
+        if ( $( e.target ).is( this ) ) return e.handleObj.handler.apply( this, arguments );
+      }
+    };
+
+  });
+
+})( jQuery );
 
 
-
-(function($) {
+( function( $ ) {
 // =============================================================================
 // CARD.JS
 // -----------------------------------------------------------------------------
@@ -3705,55 +4298,105 @@ jQuery(window).load(function() {
 // Card
 // =============================================================================
 
-xData.api.map('card', function( params ) {
+xData.api.map( 'card', function( params ) {
 
-  var $card = $(this);
+  var $card = $( this );
 
-  if ( Modernizr && Modernizr.preserve3d ) {
-    $card.addClass('flip-3d');
+  //
+  // CSS3 Support
+  //
+
+  if ( csModernizr.preserve3d ) {
+    $card.addClass( 'flip-3d' );
   }
 
-  $card.on('click', function() {
-    $card.toggleClass('flipped');
+  //
+  // Mouse Events
+  //
+
+  $card.on( 'click', flip );
+  $card.on( 'mouseenter', flipOver );
+  $card.on( 'mouseleave', flipBack );
+
+  //
+  // Touch Events
+  //
+
+  $card.on( 'touchstart', function( e ) {
+    $card.off( 'touchend', flip );
+    $card.on( 'touchend', flip );
   });
 
-  $card.on('mouseenter', function() {
-    $card.addClass('flipped');
+  $card.on( 'touchmove', function() {
+    $card.off( 'touchend', flip );
   });
 
-  $card.on('mouseleave', function() {
-    $card.removeClass('flipped');
+  // Disable mouse events on first touch
+  $card.one( 'touchstart', function( e ) {
+    $card.off( 'click', flip );
+    $card.off( 'mouseenter', flipOver );
+    $card.off( 'mouseleave', flipBack );
   });
 
-  $card.on('cs:setcardheight', function() {
+  //
+  // Don't flip when clicking the button
+  //
 
-    var $this = $(this);
+  $card.on( 'click touchend', 'a', function( e ) {
+    console.log( 'click link' );
+    e.stopPropagation();
+  } );
 
-    var front             = $this.find('.x-face-outer.front');
-    var frontContent      = front.find('.x-face-content').outerHeight();
-    var frontBorderTop    = parseInt(front.css('border-top-width'), 10);
-    var frontBorderBottom = parseInt(front.css('border-bottom-width'), 10);
+  //
+  // Event Handlers
+  //
+
+  function flip( e ) {
+    $card.toggleClass( 'flipped' );
+  }
+
+  function flipOver( e ) {
+    $card.addClass( 'flipped' );
+  }
+
+  function flipBack( e ) {
+    $card.removeClass( 'flipped' );
+  }
+
+  //
+  // Manage Height
+  //
+
+  $card.on( 'cs:setcardheight', function() {
+
+    var $this = $( this );
+
+    var $front            = $this.find( '.x-face-outer.front' );
+    var frontContent      = $front.find( '.x-face-content' ).outerHeight();
+    var frontBorderTop    = parseInt( $front.css( 'border-top-width' ), 10 );
+    var frontBorderBottom = parseInt( $front.css( 'border-bottom-width' ), 10 );
     var frontHeight       = frontContent + frontBorderTop + frontBorderBottom;
 
-    var back              = $this.find('.x-face-outer.back');
-    var backContent       = back.find('.x-face-content').outerHeight();
-    var backBorderTop     = parseInt(back.css('border-top-width'), 10);
-    var backBorderBottom  = parseInt(back.css('border-bottom-width'), 10);
+    var $back             = $this.find( '.x-face-outer.back' );
+    var backContent       = $back.find( '.x-face-content' ).outerHeight();
+    var backBorderTop     = parseInt( $back.css( 'border-top-width' ), 10 );
+    var backBorderBottom  = parseInt( $back.css( 'border-bottom-width' ), 10 );
     var backHeight        = backContent + backBorderTop + backBorderBottom;
 
-    var height = Math.max(frontHeight, backHeight);
+    var height = Math.max( frontHeight, backHeight );
 
-    $this.find('.x-card-inner').css({'height' : height});
+    $this.find( '.x-card-inner' ).css( { 'height': height } );
 
   });
 
-  $card.trigger('cs:setcardheight');
+  $card.trigger( 'cs:setcardheight' );
 
-  $(window).resize(function() {
-    $card.trigger('cs:setcardheight');
+  $( window ).on( 'load resize', function() {
+    $card.trigger( 'cs:setcardheight' );
   });
 
-});
+} );
+
 // =============================================================================
 // COLUMN.JS
 // -----------------------------------------------------------------------------
@@ -3773,17 +4416,12 @@ xData.api.map('column', function( params ) {
 
   if ( params.fade ) {
 
-    $(this).waypoint(function() {
+    var $this   = $(this);
+    var $parent = $this.parent();
 
-      var options = { opacity: '1' };
-      var duration = params.duration || 750;
+    $parent.waypoint(function() {
 
-      if      ( params.animation === 'in-from-top' )    { options.top = '0';    }
-      else if ( params.animation === 'in-from-left' )   { options.left = '0';   }
-      else if ( params.animation === 'in-from-right' )  { options.right = '0';  }
-      else if ( params.animation === 'in-from-bottom' ) { options.bottom = '0'; }
-
-      $(this).animate( options, duration, 'easeOutExpo' );
+      $this.css({ 'opacity' : '1', 'transform' : 'translate(0, 0)' });
 
     }, { offset : '65%', triggerOnce : true });
 
@@ -4114,36 +4752,44 @@ function animationHelper( target, targetAnimation, i, msDelay ) {
 
 xData.fn.setMarkers = function( googleMap ) {
 
-  var googleMarkers     = [];
-  var googleInfoWindows = [];
+	var googleMarkers     = [];
+	var googleInfoWindows = [];
 
-  $(this).find('.x-google-map-marker').each( function( index, item ) {
+	$( this ).find( '.x-google-map-marker' ).each( function( index, item ) {
 
-    var params = $(item).data('x-params');
+		var params = $( item ).data( 'x-params' );
 
-    googleMarkers[index] = new google.maps.Marker({
-      map             : googleMap,
-      position        : new google.maps.LatLng(params.lat, params.lng),
-      infoWindowIndex : index,
-      icon            : params.image
-    });
+		var marker = new google.maps.Marker({
+			map:              googleMap,
+			position:         new google.maps.LatLng( params.lat, params.lng ),
+			infoWindowIndex:  index,
+			icon:             params.image
+		});
 
-    googleInfoWindows[index] = new google.maps.InfoWindow({
-      content  : params.markerInfo,
-      maxWidth : 200
-    });
+		googleMarkers[index] = marker;
 
-    google.maps.event.addListener(googleMarkers[index], 'click', function() {
-      if ( params.markerInfo !== '' ) {
-        googleInfoWindows[index].open(googleMap, this);
-      }
-    });
+		if ( '' !== params.markerInfo ) {
 
-  });
+			var infoWindow = new google.maps.InfoWindow({
+				content:  params.markerInfo,
+				maxWidth: 200
+			});
+
+			googleInfoWindows[index] = infoWindow;
+
+			if ( params.startOpen ) {
+				infoWindow.open( googleMap, marker );
+			}
+
+			google.maps.event.addListener( googleMarkers[index], 'click', function() {
+				infoWindow.open( googleMap, this );
+			} );
+
+		}
+
+	});
 
 };
-
-
 
 // Google Maps
 // =============================================================================
@@ -4312,7 +4958,7 @@ xData.api.map('x_mejs', function( params ) {
 
     pFeatures = [];
 
-    if ( Modernizr && Modernizr.touchevents ) {
+    if ( csModernizr.touchevents ) {
       $(element).addClass('poster').css({'background-image' : 'url(' + params.poster + ')'});
       setTimeout(function() {
         $(element).removeClass('transparent');
@@ -4345,129 +4991,148 @@ xData.api.map('x_mejs', function( params ) {
   // Initialize.
   //
 
-  $(element).find('.x-mejs').mediaelementplayer({
+  function initializePlayer( $player ) {
 
-    pluginPath         : _wpmejsSettings.pluginPath,
-    startVolume        : 1,
-    features           : pFeatures,
-    audioWidth         : '100%',
-    audioHeight        : '32',
-    audioVolume        : 'vertical',
-    videoWidth         : '100%',
-    videoHeight        : '100%',
-    videoVolume        : 'vertical',
-    pauseOtherPlayers  : false,
-    alwaysShowControls : true,
-    setDimensions      : false,
-    backgroundPlayer   : isBackground,
+	  $player.mediaelementplayer({
 
-    success : function( media, domNode, player ) {
+	    pluginPath         : _wpmejsSettings.pluginPath,
+	    startVolume        : 1,
+	    features           : pFeatures,
+	    audioWidth         : '100%',
+	    audioHeight        : '32',
+	    audioVolume        : 'vertical',
+	    videoWidth         : '100%',
+	    videoHeight        : '100%',
+	    videoVolume        : 'vertical',
+	    pauseOtherPlayers  : false,
+	    alwaysShowControls : true,
+	    setDimensions      : false,
+	    backgroundPlayer   : isBackground,
 
-      //
-      // Autoplay and muting.
-      //
+	    success : function( media, domNode, player ) {
 
-      var play    = true;
-      var mute    = true;
-      var $volume = player.controls.find('.mejs-volume-button');
+	      //
+	      // Autoplay and muting.
+	      //
 
-      media.addEventListener( 'canplay', function() {
-        if ( media.attributes.hasOwnProperty('autoplay') && play ) {
-          media.play();
-          play = false;
-        }
-        if ( media.attributes.hasOwnProperty('muted') && mute ) {
-          media.setMuted(true);
-          mute = false;
-        }
-      });
+	      var play    = true;
+	      var mute    = true;
+	      var $volume = player.controls.find('.mejs-volume-button');
 
-      if ( media.attributes.hasOwnProperty('muted') && $volume.hasClass('mejs-mute') ) {
-        $volume.removeClass('mejs-mute').addClass('mejs-unmute');
-      }
+	      media.addEventListener( 'canplay', function() {
+	        if ( media.attributes.hasOwnProperty('autoplay') && play ) {
+	          media.play();
+	          play = false;
+	        }
+	        if ( media.attributes.hasOwnProperty('muted') && mute ) {
+	          media.setMuted(true);
+	          mute = false;
+	        }
+	      });
 
-
-      //
-      // Looping.
-      //
-
-      media.addEventListener( 'ended', function() {
-        if ( media.attributes.hasOwnProperty('loop') ) {
-          media.play();
-        }
-      });
+	      if ( media.attributes.hasOwnProperty('muted') && $volume.hasClass('mejs-mute') ) {
+	        $volume.removeClass('mejs-mute').addClass('mejs-unmute');
+	      }
 
 
-      //
-      // Pausing.
-      //
+	      //
+	      // Looping.
+	      //
 
-      media.addEventListener( 'play', function() {
-        var playerIndex;
-        for ( playerIndex in mejs.players ) {
-          var player = mejs.players[playerIndex];
-          if ( player.id != player.id && ! player.options.backgroundPlayer && ! player.paused && ! player.ended ) {
-            player.pause();
-          }
-          player.hasFocus = false;
-        }
-      });
+	      media.addEventListener( 'ended', function() {
+	        if ( media.attributes.hasOwnProperty('loop') ) {
+	          media.play();
+	        }
+	      });
 
 
-      //
-      // Video only.
-      //
+	      //
+	      // Pausing.
+	      //
 
-      if ( player.isVideo === true && ! player.options.backgroundPlayer ) {
-
-        var controlsOn  = function() { player.controls.stop().animate({ opacity : 1 }, 150); };
-        var controlsOff = function() { player.controls.stop().animate({ opacity : 0 }, 150); };
-
-        media.addEventListener( 'playing', function() {
-          player.container.hover( controlsOn, controlsOff );
-        });
-
-        media.addEventListener( 'pause', function() {
-          player.container.off( 'mouseenter mouseleave' );
-          controlsOn();
-        });
-
-      }
-
-      if ( player.isVideo === true && player.options.backgroundPlayer ) {
-
-        media.addEventListener( 'playing', function() {
-          media.setMuted(true);
-          $(element).trigger('xmejs:bgvideoready');
-        });
-
-      }
+	      media.addEventListener( 'play', function() {
+	        var playerIndex;
+	        for ( playerIndex in mejs.players ) {
+	          var other = mejs.players[playerIndex];
+	          if ( other.id != player.id && ! other.options.backgroundPlayer && ! other.media.paused && ! other.media.ended ) {
+	            other.pause();
+	          }
+	          other.hasFocus = false;
+	        }
+	      });
 
 
-      //
-      // Set fallback video size.
-      //
+	      //
+	      // Video only.
+	      //
 
-      if ( player.isVideo === true ) {
-        if ( media.pluginType === 'flash' || media.pluginType == 'silverlight' ) {
-          setFallbackVideoSize();
-          $(element).on('xmejs:bgvideosize', setFallbackVideoSize);
-          $(window).on('resize', setFallbackVideoSize);
-        }
-      }
+	      if ( player.isVideo === true && ! player.options.backgroundPlayer ) {
 
-      function setFallbackVideoSize() {
-        var $fallbackContainer = $('#' + media.id + '_container');
-        var width              = $fallbackContainer.outerWidth();
-        var height             = $fallbackContainer.outerHeight();
-        media.setVideoSize(width, height);
-      }
+	        var controlsOn  = function() { player.controls.stop().animate({ opacity : 1 }, 150); };
+	        var controlsOff = function() { player.controls.stop().animate({ opacity : 0 }, 150); };
 
-    },
+	        media.addEventListener( 'playing', function() {
+	          player.container.hover( controlsOn, controlsOff );
+	        });
 
-    error : function() { console.log( 'MEJS media error.' ); }
+	        media.addEventListener( 'pause', function() {
+	          player.container.off( 'mouseenter mouseleave' );
+	          controlsOn();
+	        });
+
+	      }
+
+	      if ( player.isVideo === true && player.options.backgroundPlayer ) {
+
+	        media.addEventListener( 'playing', function() {
+	          media.setMuted(true);
+	          $(element).trigger('xmejs:bgvideoready');
+	        });
+
+	      }
+
+	      $( player.container ).on( 'exitedfullscreen', function() {
+	        $( media ).removeAttr( 'style' ); // remove inline styles added when exiting fullscreen
+	      } );
+
+
+	      //
+	      // Set fallback video size.
+	      //
+
+	      if ( player.isVideo === true ) {
+	        if ( media.pluginType === 'flash' || media.pluginType == 'silverlight' ) {
+	          setFallbackVideoSize();
+	          $(element).on('xmejs:bgvideosize', setFallbackVideoSize);
+	          $(window).on('resize', setFallbackVideoSize);
+	        }
+	      }
+
+	      function setFallbackVideoSize() {
+	        var $fallbackContainer = $('#' + media.id + '_container');
+	        var width              = $fallbackContainer.outerWidth();
+	        var height             = $fallbackContainer.outerHeight();
+	        media.setVideoSize(width, height);
+	      }
+
+	    },
+
+	    error : function() { console.warn( 'MEJS media error.' ); }
+
+	  });
+	}
+
+	$(element).find('.x-mejs').each(function( index ) {
+
+  	var $player = $(this);
+
+  	// Throttle the initialization of multiple players.
+  	setTimeout( function() {
+  		initializePlayer( $player );
+  	}, index );
 
   });
+
 
 
   //
@@ -4487,7 +5152,7 @@ xData.api.map('x_mejs', function( params ) {
     var w_container   = $container.outerWidth();
     var h_container   = $container.outerHeight();
     var w_scale       = w_container / w_video;
-    var h_scale       = h_container / h_video; 
+    var h_scale       = h_container / h_video;
     var scale_used    = w_scale > h_scale ? w_scale : h_scale;
     var w_video_new   = Math.ceil((scale_used * w_video) + 20);
     var h_video_new   = Math.ceil((scale_used * h_video) + 20);
@@ -4575,7 +5240,7 @@ xData.api.map('responsive_text', function( params ) {
     options.maxFontSize = params.maxFontSize;
   }
 
-  $(params.selector).fitText(params.compression, options);
+  $(params.selector).csFitText(params.compression, options);
 
 });
 // =============================================================================
@@ -4603,7 +5268,7 @@ function sectionSetup( params ) {
   var backgroundSetup = function() {
 
     if ( $this.hasClass('parallax') ) {
-      if ( Modernizr && Modernizr.touchevents ) {
+      if ( csModernizr.touchevents ) {
         $this.css('background-attachment', 'scroll');
       } else {
         if ( $this.hasClass('bg-image')   ) speed = 0.1;
@@ -4660,40 +5325,118 @@ xData.api.map('skill_bar', function( params ) {
 // Slider
 // =============================================================================
 
-xData.api.map('slider', function( params ) {
+xData.api.map( 'slider', function( params ) {
 
-  var $this = jQuery(this);
+  var $this = jQuery( this );
 
   var setupSlider = function() {
 
     $this.flexslider({
-      selector       : '.x-slides > li',
-      prevText       : '<i class=\"x-icon-chevron-left\" data-x-icon=\"&#xf053;\"></i>',
-      nextText       : '<i class=\"x-icon-chevron-right\" data-x-icon=\"&#xf054;\"></i>',
-      animation      : params.animation,
-      controlNav     : params.controlNav,
-      directionNav   : params.prevNextNav,
-      slideshowSpeed : params.slideTime,
-      animationSpeed : params.slideSpeed,
-      slideshow      : params.slideshow,
-      randomize      : params.random,
-      touch          : params.touch,
-      pauseOnHover   : true,
-      useCSS         : true,
-      video          : true,
-      smoothHeight   : true,
-      easing         : 'easeInOutExpo'
+      selector:       '.x-slides > li',
+      prevText:       '<i class=\"x-icon-chevron-left\" data-x-icon=\"&#xf053;\"></i>',
+      nextText:       '<i class=\"x-icon-chevron-right\" data-x-icon=\"&#xf054;\"></i>',
+      animation:      params.animation,
+      controlNav:     params.controlNav,
+      directionNav:   params.prevNextNav,
+      slideshowSpeed: parseInt( params.slideTime ),
+      animationSpeed: parseInt( params.slideSpeed ),
+      slideshow:      ( params.slideshow ),
+      randomize:      params.random,
+      touch:          params.touch,
+      pauseOnHover:   ( params.pauseOnHover ),
+      useCSS:         true,
+      video:          true,
+      smoothHeight:   true,
+      easing:         'easeInOutExpo'
     });
 
   };
 
-  if ( document.readyState === 'complete' ) {
+  if ( 'complete' === document.readyState ) {
     setupSlider();
   } else {
-    jQuery(window).load( setupSlider );
+    jQuery( window ).load( setupSlider );
   }
 
-});
+} );
+
+// =============================================================================
+// COLUMN.JS
+// -----------------------------------------------------------------------------
+// Shortcode data attribute API information.
+// =============================================================================
+
+// =============================================================================
+// TABLE OF CONTENTS
+// -----------------------------------------------------------------------------
+//   01. Column
+// =============================================================================
+
+// Column
+// =============================================================================
+
+xData.api.map( 'tab_nav', function( params ) {
+
+  var $ul = $( this );
+  var $content = $ul.next( '.x-tab-content' );
+  var $tabs = $content.find( '.x-tab-pane' );
+
+  //
+  // Ensure one, and only one "first active"
+  //
+
+  var $firstActive = $content.find( '.x-tab-pane.active' ).first();
+
+  if ( ! $firstActive.length ) {
+    $firstActive = $content.find( '.x-tab-pane' ).first();
+  }
+
+  //
+  // Navigate to the first active tab
+  //
+
+  navigate( $firstActive.data( 'cs-tab-index' ) );
+
+  //
+  // Add a min height on vertical tabs
+  //
+
+  if ( 'vertical' === params.orientation ) {
+    $content.css( {
+      'minHeight': $ul.outerHeight()
+    } );
+  }
+
+  //
+  // Click Navigation
+  //
+
+  $ul.on( 'click', 'a[data-cs-tab-toggle]', function( e ) {
+    e.preventDefault();
+    var $a = $( this );
+    navigate( $a.data( 'cs-tab-toggle' ), $a );
+  });
+
+  //
+  // Navigation Handler
+  //
+
+  function navigate( index, $a ) {
+
+    $ul.find( 'li.x-nav-tabs-item' ).removeClass( 'active' );
+    $tabs.removeClass( 'active' );
+    $content.find( '.x-tab-pane[data-cs-tab-index="' + index + '"]' ).addClass( 'active' );
+
+    if ( ! $a ) {
+      $a = $ul.find( 'li.x-nav-tabs-item a[data-cs-tab-toggle="' + index + '"]' );
+    }
+
+    $a.parent().addClass( 'active' );
+
+  }
+
+} );
+
 // =============================================================================
 // TEXT-TYPE.JS
 // -----------------------------------------------------------------------------
@@ -4724,5 +5467,4 @@ xData.api.map('text_type', function( params ) {
 
 });
 
-
-})(jQuery);
+} )( jQuery );

@@ -6,16 +6,42 @@
  * The processes represented here are otherwise handled internally.
  */
 
-
 /**
- * Add a new Element to the Builder interface
- * Remember that elements must inherit from Cornerstone_Element_Base
- * This should be called from the cornerstone_load_elements action
- * @param  string $class_name Name of class for the custom element
+ * Set which post types should be enabled by default when Cornerstone is first
+ * activated.
+ * @param  array $types Array of strings specifying post type names.
  * @return none
  */
-function cornerstone_add_element( $class_name ) {
-	CS()->elements()->add( $class_name );
+function cornerstone_set_default_post_types( $types ) {
+	CS()->component( 'Common' )->set_default_post_types( $types );
+}
+
+/**
+ * Allows integrating themes to disable Themeco cross-promotion, and other
+ * presentational items. Example:
+ *
+		cornerstone_theme_integration( array(
+			'remove_global_validation_notice' => true,
+			'remove_themeco_offers'           => true,
+			'remove_purchase_link'            => true,
+			'remove_support_box'              => true
+		) );
+ *
+ * @param  array $args List of items to flag
+ * @return none
+ */
+function cornerstone_theme_integration( $args ) {
+	CS()->component( 'Integration_Manager' )->theme_integration( $args );
+}
+
+/**
+ * Register a new element
+ * @param  $class_name Name of the class you've created in definition.php
+ * @param  $name       slug name of the element. "alert" for example.
+ * @param  $path       Path to the folder containing a definition.php file.
+ */
+function cornerstone_register_element( $class_name, $name, $path ) {
+	CS()->component( 'Element_Orchestrator' )->add( $class_name, $name, $path );
 }
 
 /**
@@ -24,7 +50,7 @@ function cornerstone_add_element( $class_name ) {
  * @return none
  */
 function cornerstone_remove_element( $name ) {
-	CS()->elements()->remove( $name );
+	CS()->component( 'Element_Orchestrator' )->remove( $name );
 }
 
 /**
@@ -35,7 +61,7 @@ function cornerstone_remove_element( $name ) {
  * @return  none
  */
 function cornerstone_register_integration( $name, $class_name ) {
-	CS()->integrations()->register( $name, $class_name );
+	CS()->component( 'Integration_Manager' )->register( $name, $class_name );
 }
 
 /**
@@ -46,5 +72,13 @@ function cornerstone_register_integration( $name, $class_name ) {
  * @return  none
  */
 function cornerstone_unregister_integration( $name ) {
-	CS()->integrations()->unregister( $name );
+	CS()->component( 'Integration_Manager' )->unregister( $name );
+}
+
+
+/**
+ * Deprecated
+ */
+function cornerstone_add_element( $class_name ) {
+	CS()->component( 'Element_Orchestrator' )->add_mk1_element( $class_name );
 }
