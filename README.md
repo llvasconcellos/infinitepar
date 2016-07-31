@@ -1,2 +1,0 @@
-# infinitepar
-Site Infinitepar
