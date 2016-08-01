@@ -1,0 +1,855 @@
+﻿{
+  "title": "principal",
+  "elements": [
+    {
+      "_type": "section",
+      "title": "Soluções Infinitepar",
+      "elements": [
+        {
+          "_type": "row",
+          "_column_layout": "1/1",
+          "elements": [
+            {
+              "_type": "column",
+              "_active": true,
+              "size": "1/1",
+              "elements": [
+                {
+                  "_type": "custom-headline",
+                  "elements": [],
+                  "content": "Soluções INFINITEPAR",
+                  "text_align": "c",
+                  "accent": true
+                }
+              ]
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            }
+          ],
+          "margin": [
+            "0px",
+            "auto",
+            "10px",
+            "auto",
+            "unlinked"
+          ]
+        },
+        {
+          "_type": "row",
+          "title": "New Item 2",
+          "_column_layout": "1/4 + 1/4 + 1/4 + 1/4",
+          "elements": [
+            {
+              "_type": "column",
+              "_active": true,
+              "size": "1/4",
+              "elements": [
+                {
+                  "_type": "promo",
+                  "elements": [],
+                  "content": "[x_feature_headline type=\"left\" level=\"h3\" looks_like=\"h3\" icon=\"dashboard\"]<a target=\"_blank\" href=\"/?page_id=74\">Startups</a>[/x_feature_headline]\nMentoria e desenvolvimento criativo empreendedor.",
+                  "image": "http://infinitepar.dev/infinitepar/www/wp-content/uploads/2016/06/promo-startups.jpg",
+                  "alt": "Startups"
+                }
+              ]
+            },
+            {
+              "_type": "column",
+              "size": "1/4",
+              "_active": true,
+              "elements": [
+                {
+                  "_type": "promo",
+                  "elements": [],
+                  "content": "[x_feature_headline type=\"left\" level=\"h3\" looks_like=\"h3\" icon=\"usd\"]<a target=\"_blank\" href=\"/?page_id=80\">Negócios</a>[/x_feature_headline]\nImpulsão, inovação e consultoria.\n \n",
+                  "image": "http://infinitepar.dev/infinitepar/www/wp-content/uploads/2016/06/promo-negocios.jpg",
+                  "alt": "Negócios"
+                }
+              ]
+            },
+            {
+              "_type": "column",
+              "size": "1/4",
+              "_active": true,
+              "elements": [
+                {
+                  "_type": "promo",
+                  "elements": [],
+                  "content": "[x_feature_headline type=\"left\" level=\"h3\" looks_like=\"h3\" icon=\"lightbulb-o\"]<a target=\"_blank\" href=\"/?page_id=119\">Innovation</a>[/x_feature_headline]\nSoluções criativas e inovadoras para seu crescimento.",
+                  "image": "http://infinitepar.dev/infinitepar/www/wp-content/uploads/2016/06/promo-inovacao.jpg",
+                  "alt": "Innovation"
+                }
+              ]
+            },
+            {
+              "_type": "column",
+              "size": "1/4",
+              "_active": true,
+              "elements": [
+                {
+                  "_type": "promo",
+                  "elements": [],
+                  "content": "[x_feature_headline type=\"left\" level=\"h3\" looks_like=\"h3\" icon=\"calendar\"]<a target=\"_blank\" href=\"/?page_id=84\">Eventos</a>[/x_feature_headline]\nConsolidando o conhecimento na prática.",
+                  "image": "http://infinitepar.dev/infinitepar/www/wp-content/uploads/2016/06/promo-eventos.jpg",
+                  "alt": "Eventos"
+                }
+              ]
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "_type": "section",
+      "title": "Desenvolva-se Conosco",
+      "elements": [
+        {
+          "_type": "row",
+          "_column_layout": "1/1",
+          "elements": [
+            {
+              "_type": "column",
+              "_active": true,
+              "size": "1/1",
+              "elements": [
+                {
+                  "_type": "custom-headline",
+                  "elements": [],
+                  "content": "Desenvolva-se Conosco",
+                  "text_align": "c",
+                  "accent": true
+                },
+                {
+                  "_type": "text",
+                  "elements": [],
+                  "content": "Estes são os parceiros impulsionados pelas soluções INFINITEPAR:",
+                  "text_align": "c"
+                }
+              ]
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            }
+          ],
+          "margin": [
+            "0px",
+            "auto",
+            "10px",
+            "auto",
+            "unlinked"
+          ]
+        },
+        {
+          "_type": "row",
+          "title": "New Item 2",
+          "_column_layout": "1/4 + 1/4 + 1/4 + 1/4",
+          "elements": [
+            {
+              "_type": "column",
+              "_active": true,
+              "size": "1/4",
+              "elements": [
+                {
+                  "_type": "image",
+                  "elements": [],
+                  "image_style": "circle",
+                  "src": "http://infinitepar.dev/infinitepar/www/wp-content/uploads/2016/07/zoony.png",
+                  "link": true,
+                  "href": "http://zoony.com.br/",
+                  "href_title": "zoony.com.br",
+                  "href_target": true,
+                  "alt": "zoony"
+                },
+                {
+                  "_type": "text",
+                  "elements": [],
+                  "content": "<h5>Zoony</h5>"
+                },
+                {
+                  "_type": "text",
+                  "elements": [],
+                  "content": "Plataforma de auxílio ao estudante universitário que o conecta às melhores vagas de estágio segundo o seu perfil comportamental."
+                }
+              ]
+            },
+            {
+              "_type": "column",
+              "size": "1/4",
+              "_active": true,
+              "elements": [
+                {
+                  "_type": "image",
+                  "elements": [],
+                  "image_style": "circle",
+                  "link": true,
+                  "href": "http://carprev.com.br/",
+                  "href_title": "carprev.com.br",
+                  "href_target": true,
+                  "alt": "carprev",
+                  "src": "http://infinitepar.dev/infinitepar/www/wp-content/uploads/2016/07/carprev.png"
+                },
+                {
+                  "_type": "text",
+                  "elements": [],
+                  "content": "<h5>CarPrev</h5>"
+                },
+                {
+                  "_type": "text",
+                  "elements": [],
+                  "content": "O CarPrev te ajuda a ter um total controle de sua frota, melhorando sua comunicação com mecânicas em uma linguagem rápida e fácil."
+                }
+              ]
+            },
+            {
+              "_type": "column",
+              "size": "1/4",
+              "_active": true,
+              "elements": [
+                {
+                  "_type": "image",
+                  "elements": [],
+                  "image_style": "circle",
+                  "link": true,
+                  "href": "http://forleven.com/",
+                  "href_title": "forleven.com",
+                  "href_target": true,
+                  "alt": "Forleven",
+                  "src": "http://infinitepar.dev/infinitepar/www/wp-content/uploads/2016/07/forleven.png"
+                },
+                {
+                  "_type": "text",
+                  "elements": [],
+                  "content": "<h5>Forleven</h5>"
+                },
+                {
+                  "_type": "text",
+                  "elements": [],
+                  "content": "Um software de Gestão Escolar diferente!\nSem cobranças por número de alunos, suporte fácil quando você precisar."
+                }
+              ]
+            },
+            {
+              "_type": "column",
+              "size": "1/4",
+              "_active": true,
+              "elements": [
+                {
+                  "_type": "image",
+                  "elements": [],
+                  "image_style": "circle",
+                  "link": true,
+                  "href": "http://www.m2agro.com.br/",
+                  "href_title": "www.m2agro.com.br",
+                  "href_target": true,
+                  "alt": "m2agro",
+                  "src": "http://infinitepar.dev/infinitepar/www/wp-content/uploads/2016/07/m2agro.png"
+                },
+                {
+                  "_type": "text",
+                  "elements": [],
+                  "content": "<h5>M2Agro</h5>"
+                },
+                {
+                  "_type": "text",
+                  "elements": [],
+                  "content": "Plataforma de planejamento agrícola. Planeje suas atividades de campo, gerencie seus custos e identifique oportunidades para expandir sua produção."
+                }
+              ]
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            }
+          ],
+          "margin": [
+            "0px",
+            "auto",
+            "20px",
+            "auto",
+            "unlinked"
+          ]
+        },
+        {
+          "_type": "row",
+          "title": "Copy of New Item 2",
+          "_column_layout": "1/4 + 1/4 + 1/4 + 1/4",
+          "elements": [
+            {
+              "_type": "column",
+              "_active": true,
+              "size": "1/4",
+              "elements": [
+                {
+                  "_type": "image",
+                  "elements": [],
+                  "image_style": "circle",
+                  "link": true,
+                  "href": "https://www.facebook.com/Learny-Games-368488293361404/",
+                  "href_title": "Learny Facebook Page",
+                  "href_target": true,
+                  "alt": "Learny",
+                  "src": "http://infinitepar.dev/infinitepar/www/wp-content/uploads/2016/07/learny.png"
+                },
+                {
+                  "_type": "text",
+                  "elements": [],
+                  "content": "<h5>Learny Games</h5>"
+                },
+                {
+                  "_type": "text",
+                  "elements": [],
+                  "content": "Empresa que se dedica ao desenvolvimento de video games para marketing de alto impacto."
+                }
+              ]
+            },
+            {
+              "_type": "column",
+              "size": "1/4",
+              "_active": true,
+              "elements": [
+                {
+                  "_type": "image",
+                  "elements": [],
+                  "image_style": "circle",
+                  "link": true,
+                  "href": "http://messier.com.br/",
+                  "href_title": "messier.com.br",
+                  "href_target": true,
+                  "alt": "Messier",
+                  "src": "http://infinitepar.dev/infinitepar/www/wp-content/uploads/2016/07/messier.png"
+                },
+                {
+                  "_type": "text",
+                  "elements": [],
+                  "content": "<h5>Messier Games</h5>"
+                },
+                {
+                  "_type": "text",
+                  "elements": [],
+                  "content": "Uma desenvolvedora brasileira de jogos para as plataformas mobile, PC e console, localizada em Santo André no estado de São Paulo."
+                }
+              ]
+            },
+            {
+              "_type": "column",
+              "size": "1/4",
+              "_active": true,
+              "elements": [
+                {
+                  "_type": "image",
+                  "elements": [],
+                  "image_style": "circle",
+                  "link": true,
+                  "href": "http://www.tadevolvido.com/",
+                  "href_title": "www.tadevolvido.com",
+                  "href_target": true,
+                  "alt": "tadevolvido!",
+                  "src": "http://infinitepar.dev/infinitepar/www/wp-content/uploads/2016/07/tadevolvido.png"
+                },
+                {
+                  "_type": "text",
+                  "elements": [],
+                  "content": "<h5>Tadevolvido!</h5>"
+                },
+                {
+                  "_type": "text",
+                  "elements": [],
+                  "content": "O Tadevolvido! é um serviço que conecta pessoas que perdem documentos com eventos que guardam documentos perdidos, efetuando devoluções."
+                }
+              ]
+            },
+            {
+              "_type": "column",
+              "size": "1/4",
+              "_active": true,
+              "elements": [
+                {
+                  "_type": "image",
+                  "elements": [],
+                  "image_style": "circle",
+                  "link": true,
+                  "href": "http://circuitostartup.com/",
+                  "href_title": "circuitostartup.com",
+                  "href_target": true,
+                  "alt": "circuitostartup",
+                  "src": "http://infinitepar.dev/infinitepar/www/wp-content/uploads/2016/07/circuitostartup.png"
+                },
+                {
+                  "_type": "text",
+                  "elements": [],
+                  "content": "<h5>Circuito Startup</h5>"
+                },
+                {
+                  "_type": "text",
+                  "elements": [],
+                  "content": "Rede de negócios para apoio a empreendedores e criação de startups. Saiba mais sobre startups. Descubra lugares, eventos, serviços e mais."
+                }
+              ]
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "_type": "section",
+      "title": "Está Pronto?",
+      "elements": [
+        {
+          "_type": "row",
+          "_column_layout": "1/1",
+          "elements": [
+            {
+              "_type": "column",
+              "_active": true,
+              "size": "1/1",
+              "elements": [
+                {
+                  "_type": "custom-headline",
+                  "elements": [],
+                  "text_align": "c",
+                  "accent": true,
+                  "content": "Está Pronto?"
+                }
+              ]
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            }
+          ],
+          "margin": [
+            "0px",
+            "auto",
+            "10px",
+            "auto",
+            "unlinked"
+          ],
+          "id": "contato"
+        },
+        {
+          "_type": "row",
+          "title": "New Item 2",
+          "_column_layout": "1/2 + 1/2",
+          "elements": [
+            {
+              "_type": "column",
+              "_active": true,
+              "size": "1/2",
+              "elements": [
+                {
+                  "_type": "text",
+                  "elements": [],
+                  "content": "<h4>Mande um e-mail pra gente, queremos conhecer sua ideia e entender como podemos te ajudar a crescer.</h4>\n<h4>O primeiro café é por nossa conta!</h4>"
+                }
+              ]
+            },
+            {
+              "_type": "column",
+              "size": "1/2",
+              "_active": true,
+              "elements": [
+                {
+                  "_type": "raw-content",
+                  "elements": [],
+                  "content": "[contact-form-7 id=\"71\" title=\"Formulário de contato 1\"]"
+                }
+              ]
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "_type": "section",
+      "title": "Copy of Está Pronto?",
+      "elements": [
+        {
+          "_type": "row",
+          "_column_layout": "1/1",
+          "elements": [
+            {
+              "_type": "column",
+              "_active": true,
+              "size": "1/1",
+              "elements": [
+                {
+                  "_type": "raw-content",
+                  "elements": [],
+                  "content": "[x_content_band bg_image=\"http://infinitepar.dev/infinitepar/www/wp-content/uploads/2016/07/wood_10.jpg\" border=\"all\" no_margin inner_container=\"true\"] [x_custom_headline style=\"margin-top: 0;\" level=\"h4\" looks_like=\"h3\"]Cool Headline[/x_custom_headline] <p>Esurivi enim et dedistis mihi manducare: sitivi, et dedistis mihi bibere hospes eram et collexistis me nudus et operuistis me, adipiscing ego me: infirmus, et vidi post me, visitastis me in carcere eram et venistis ad me.</p> [/x_content_band]"
+                },
+                {
+                  "_type": "custom-headline",
+                  "elements": [],
+                  "text_align": "c",
+                  "accent": true,
+                  "content": "Está Pronto?"
+                }
+              ]
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            }
+          ],
+          "margin": [
+            "0px",
+            "auto",
+            "10px",
+            "auto",
+            "unlinked"
+          ],
+          "id": "contato"
+        },
+        {
+          "_type": "row",
+          "title": "New Item 2",
+          "_column_layout": "1/2 + 1/2",
+          "elements": [
+            {
+              "_type": "column",
+              "_active": true,
+              "size": "1/2",
+              "elements": [
+                {
+                  "_type": "text",
+                  "elements": [],
+                  "content": "<h4>Mande um e-mail pra gente, queremos conhecer sua ideia e entender como podemos te ajudar a crescer.</h4>\n<h4>O primeiro café é por nossa conta!</h4>"
+                }
+              ]
+            },
+            {
+              "_type": "column",
+              "size": "1/2",
+              "_active": true,
+              "elements": [
+                {
+                  "_type": "raw-content",
+                  "elements": [],
+                  "content": "[contact-form-7 id=\"71\" title=\"Formulário de contato 1\"]"
+                }
+              ]
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "_type": "section",
+      "title": "Onde Estamos?",
+      "elements": [
+        {
+          "_type": "row",
+          "_column_layout": "1/1",
+          "elements": [
+            {
+              "_type": "column",
+              "_active": true,
+              "size": "1/1",
+              "elements": [
+                {
+                  "_type": "custom-headline",
+                  "elements": [],
+                  "text_align": "c",
+                  "accent": true,
+                  "content": "Onde Estamos?"
+                },
+                {
+                  "_type": "text",
+                  "elements": [],
+                  "content": "A INFINITEPAR atua dentro e fora do Brasil, diretamente onde o cliente está!",
+                  "text_align": "c"
+                }
+              ]
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            }
+          ],
+          "margin": [
+            "0px",
+            "auto",
+            "10px",
+            "auto",
+            "unlinked"
+          ]
+        },
+        {
+          "_type": "row",
+          "title": "New Item 2",
+          "_column_layout": "1/2 + 1/2",
+          "elements": [
+            {
+              "_type": "column",
+              "_active": true,
+              "size": "1/2",
+              "elements": [
+                {
+                  "_type": "text",
+                  "elements": [],
+                  "content": "A INFINITEPAR atua dentro e fora do Brasil. Atualmente temos escritórios no Rio de Janeiro, Porto Alegre e Joinville, mas atendemos por videoconferência ou indo até você em qualquer localidade!"
+                }
+              ],
+              "padding": [
+                "40px",
+                "0px",
+                "0px",
+                "0px",
+                "unlinked"
+              ]
+            },
+            {
+              "_type": "column",
+              "size": "1/2",
+              "_active": true,
+              "elements": [
+                {
+                  "_type": "text",
+                  "elements": [],
+                  "content": "<h5>Onde nos encontrar?</h5>\nRio de Janeiro: (TELEFONE)\nPorto Alegre: (TELEFONE)\nJoinville: (TELEFONE)\n\n<a href=\"mailto:contato@infinitepar.com.br\">contato@infinitepar.com.br</a>"
+                }
+              ]
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
