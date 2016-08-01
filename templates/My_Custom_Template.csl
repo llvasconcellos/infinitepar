@@ -1,0 +1,239 @@
+﻿{
+  "title": "My Custom Template",
+  "elements": [
+    {
+      "_type": "section",
+      "title": "Impulsão. Inovação. Consultoria.",
+      "elements": [
+        {
+          "_type": "row",
+          "_column_layout": "1/1",
+          "elements": [
+            {
+              "_type": "column",
+              "_active": true,
+              "size": "1/1",
+              "elements": [
+                {
+                  "_type": "text",
+                  "elements": [],
+                  "content": "<h4>Impulsão. Inovação. Consultoria.</h4>\n&nbsp;\n\nEstas são as soluções para negócios oferecidas pela INFINITEPAR. Conhecemos seu negócio e lhe ajudamos a atualizá-lo com as novas tecnologias e conhecimentos que são necessárias para o desenvolvimento das empresas nesse novo mercado que muda a cada dia."
+                }
+              ]
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            }
+          ]
+        },
+        {
+          "_type": "row",
+          "title": "New Item 2",
+          "_column_layout": "1/3 + 1/3 + 1/3",
+          "elements": [
+            {
+              "_type": "column",
+              "_active": true,
+              "size": "1/3",
+              "elements": [
+                {
+                  "_type": "feature-box",
+                  "elements": [],
+                  "title": "Tightening BiZ Hands – Aproximação e negociação estratégica",
+                  "graphic_icon": "hand-paper-o",
+                  "content": "Foco na realização de negociações que envolvam complexa analise na tomada de decisões, relacionamento e investigação decisória para o desenvolvimento e assinatura de acordos de interesses com MOU (Memorandum of Understanding) ou LOI (Letter of Intent). Este processo leva em torno de 90 a 180 dias."
+                }
+              ]
+            },
+            {
+              "_type": "column",
+              "size": "1/3",
+              "_active": true,
+              "elements": [
+                {
+                  "_type": "feature-box",
+                  "elements": [],
+                  "title": "FIT to Client – Soluções de Problemas",
+                  "graphic_icon": "building-o",
+                  "content": "Consultoria com experts do mercado no Brasil e no exterior para resolução de problemas em foco nas empresas clientes, sejam eles estratégicos, operacionais ou financeiros. São de 7 a 30 dias de trabalho intenso com especialistas para ajudar você com seus maiores problemas!"
+                }
+              ]
+            },
+            {
+              "_type": "column",
+              "size": "1/3",
+              "_active": true,
+              "elements": [
+                {
+                  "_type": "feature-box",
+                  "elements": [],
+                  "title": "Opportunity Relations Agent",
+                  "graphic_icon": "lightbulb-o",
+                  "content": "Ativação e aproximação de empresas internacionais com empresas Brasileiras e vice versa, desenvolvendo relacionamento de negócios que empresas Brasileiras tenham oportunidades em novos mercados além do Brasil."
+                }
+              ]
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "_type": "section",
+      "title": "INNOVATION DEV",
+      "elements": [
+        {
+          "_type": "row",
+          "_column_layout": "1/1",
+          "elements": [
+            {
+              "_type": "column",
+              "_active": true,
+              "size": "1/1",
+              "elements": [
+                {
+                  "_type": "text",
+                  "elements": [],
+                  "content": "<h4>INNOVATION DEV</h4>\n&nbsp;\n\nO desenvolvimento inovativo é a chave para concorrer com as grandes empresas do mercado, sem que para isso você tenha que, necessariamente, realizar grandes investimentos."
+                }
+              ]
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            }
+          ]
+        },
+        {
+          "_type": "row",
+          "title": "New Item 2",
+          "_column_layout": "1/2 + 1/2",
+          "elements": [
+            {
+              "_type": "column",
+              "_active": true,
+              "size": "1/2",
+              "elements": [
+                {
+                  "_type": "feature-box",
+                  "elements": [],
+                  "title": "Innova Match",
+                  "graphic_icon": "hand-paper-o",
+                  "content": "O Corporate Ventures “Innova Match” é um programa de aproximação de indústrias consolidadas com Startups maduras, cuja tecnologia disruptiva fornece a inovação desejada para seu modelo de negócio. Possuímos em nossa base de dados mais de 7 mil startups e 22 mil empreendedores no Brasil e na America Latina."
+                }
+              ]
+            },
+            {
+              "_type": "column",
+              "size": "1/2",
+              "_active": true,
+              "elements": [
+                {
+                  "_type": "feature-box",
+                  "elements": [],
+                  "title": "Innova Challenge – Out of Box",
+                  "graphic_icon": "building-o",
+                  "content": "É uma solução sob medida para empresas em busca de inovação e oportunidade de negócios, que quer implementar soluções “fora da caixa”. Com o “Innova Challenge” a empresa promoverá competições de inovação ou hackatons de programadores para investir na criação de spin-offs, incorporação destes projetos na empresa ou atração de novos talentos para atuação intra-empreendedora em seu negócio."
+                }
+              ]
+            },
+            {
+              "_type": "column",
+              "size": "1/3",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

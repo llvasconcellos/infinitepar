@@ -1,0 +1,1614 @@
+msgid ""
+msgstr "MIME-Version: 1.0\n"
+
+#. Name.
+msgid "Google Forms"
+msgstr ""
+
+#. Short description.
+msgid "Embeds a published, public Google Form in a WordPress post, page, or widget."
+msgstr ""
+
+#. Screenshot description.
+msgid "Standard Google Form"
+msgstr ""
+
+#. Screenshot description.
+msgid "Same Google Form embedded in WordPress"
+msgstr ""
+
+#. Screenshot description.
+msgid "Setting Page"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Fetches a published Google Form using a WordPress custom post or shortcode, removes the Gooogle wrapper HTML and then renders it as an HTML form embedded in your blog post or page. When using Google Form post type, the <em>wpgform</em> shortcode accepts one parameter, <em>id</em>, which is the post id of the form.  When using the <strong>deprecated</strong> <em>gform</em> shortcode, the only required parameter is <code>form</code> which is set to the URL to the Google Form URL.  Recommended but optional, you can also provide a custom URL for a confirmation page if you don't care for the default Google text.  The confirmation page will override the default Google <code>Thank You</code> page and offers better integration with your WordPress site.  There are a number of other options, refer to the documentation for further details."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "For example, suppose you want to integrate the form at <code>https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;pli=1&amp;formkey=ABCDEFGHIJKLMNOPQRSTUVWXYZ12345678#gid=0</code>, (not a real URL) use the following shortcode in your WordPress post or page:"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "<strong>Deprecated:</strong> use of the <em>gform</em> shortcode is <strong>deprecated</strong> - please use the <em>wpgform</em> shortcode."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Currently, this plugin only supports Google Forms that are \"Published as a web page\" and therefore public. Private Google Forms are not supported."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "<a href=\"http://michaelwalsh.org/wordpress/wordpress-plugins/wpgform/\">Demo</a>"
+msgstr ""
+
+#. Found in installation list item.
+msgid "Install using the WordPress Pluin Installer (search for <code>WordPress Google Form</code>) or download <code>WordPress Google Form</code>, extract the <code>wpgforms</code> folder and upload <code>wpgforms</code> to the <code>/wp-content/plugins/</code> directory."
+msgstr ""
+
+#. Found in installation list item.
+msgid "Activate the plugin through the 'Plugins' menu in WordPress."
+msgstr ""
+
+#. Found in installation list item.
+msgid "Configure <code>WP Goolge Forms</code> from the <code>Settings</code> menu as appropriate."
+msgstr ""
+
+#. Found in installation list item.
+msgid "Recommended:  Create a Google Form Custom Post Type and then use the <code>[wpgform id='&lt;Google Form CPT Id&gt;']</code> shortcode wherever you'd like to insert the Google Form or simply publish the form and use it's permalink URL."
+msgstr ""
+
+#. Found in installation list item.
+msgid "Alternatively:  Use the <code>[gform form='&lt;full_url_to_form&gt;']</code> shortcode wherever you'd like to insert the Google Form."
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.86"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.85"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.84"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.83"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.82"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.81"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.80"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.79"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.78"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.77"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.76"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.75"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.74"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.73"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.72"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.71"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.70"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.69"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.68"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.67"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.66"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.65"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.64"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.63"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.62"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.61"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.60"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.59"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.58"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.57"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.56"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.55"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.54"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.53"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.52"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.51"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.50"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.49"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.48"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.47"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.46"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.45"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.44"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.43"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.42"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.41"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.40"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.39"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.38"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.37"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.36"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.35"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.34"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.33"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.32"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.31"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.30"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.29"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.28"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.27"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.26"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.25"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.24"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.23"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.22"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.21"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.20"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.19"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.18"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.17"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.16"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.15"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.14"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.13"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.12"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.11"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.10"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.9"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.8"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.7"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.6"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.5"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.4"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.3"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.2"
+msgstr ""
+
+#. Found in change log header.
+msgid "Version 0.1"
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Retagged to correct version number."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Development moved to GitHub."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Replaced call to deprecated function mysql_real_escape_string()."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed security issues with _REQUEST flagged by WordPress.org."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Added ability to suppopress columnization of a form when the browser is smaller than some user specified width."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed bug with Google Default Text override which prevented form specific overrides from working correctly."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed bug with Google default text always being displayed regardless of global or form specific setting.  This caused some buttons to always appear in English."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Added additional debug information to examine wp_remote_post() parameters."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Removed leftover debug code which generated output into the error log."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Resolved a number of PHP Strict Standard notices resulting from calling non-static functions statically."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Bug fix for required email validation field with optional message."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Added user-agent argument to HTTP API remote get and post requests, allows Google to return HTML5 inputs for browsers which support it (with some limitations)."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Bug fix for required validation field with spaces in the optional message."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Minor fixes to eliminate PHP warnings when using deprecated gform shortcode."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed bug with CSS prefix and suffix not being added to CSS classes."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Added new setting to turn off HTML filtering which has been used to \"clean\" the HTML retrieved from Google."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "More Debugging messages sent to PHP error log removed."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Debugging messages sent to PHP error log removed."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Added support for form specific button override text."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Updated jQuery Validate to 1.13.1."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Re-worked Javascript loading so only loaded when needed."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed jQuery Script loading problem on Dashboard - script loaded for all Dashboard pages instead of just the Google Form editing page."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Add jQuery to map the \"Submit another resonse\" URL to the proper WordPress URL."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed bug jQuery script where \"Other\" label text was not properly selected resulting in duplicate text.  Appears to be due to change in Google generated HTML."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Added support for multiple email addresses, separated by semicolon, for email notification."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Added support for Right to Left column ordering in multi-column forms.  Useful for right-to-left languages such as Hebrew."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed call to non-existant function is_empty(), should be calling empty()."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Bumped version number due to mistagging v0.70 release."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Added Serbo Croation translation (thank you Borisa Djuraskovic / www.webhostinghub.com)"
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Added support for Regular Expression validation check.  Regular expressions can be tricky, YMMV!"
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed a bug which occurs when the Send Email option is enabled but the Send To address isn't specified (should default to admin email)."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed bug in generated jQuery for Validation which caused syntax errors which could then interfere with redirect."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Added support for embedded images in Google Forms."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed a bug due to missing named parameter passed to wp_update_post() which  manifested itself in a call to array_map() as part of core WordPress function."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed typo in internationalization mapping for one of the form buttons."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Removed leftover debug code."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Moved hygiene out of init hook into admin_init hook so it won't run on every page load.  Resolves conflict with WordPress SEO."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed hygiene to only update post content when it isn't what is expected."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed bug which caused all form submissions to be logged regardless of plugin setting."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Implemented \"save_post\" for custom post type eliminating general purpose \"save_post\" (only option prior to WordPress 3.7) action which could potentially, if not handled correctly by another plugin, corrupt post data."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Formally <strong>deprecated</strong> the <code>gform</code> shortcode by updating README file."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Added flush of rewrite rules upon plugin activation and deactivation."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Implemented protocol relative URLs for loading jQuery script from Microsoft CDN to avoid mixed-content warnings when serving over https."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed layout of CAPTCHA options on settings page."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed bug with preset values as part of the URL which contain spaces."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed bug sending End User email upon form submission."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Refactored construction of email headers based on experience with Email Users plugin."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed a number of strings which were missing translation wrapper functions."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Reverted to manually constructed body parameter for wp_remote_post() to allow checkboxes to be properly passed to Google."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed warnings generated by calls to static functions which were not declared static."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Added check for HTTP API cURL transport and issue a warning when not present.  There was a change between WordPress 3.6.1 and 3.7 to the WordPress HTTP API and the streams and fsockopen transports are unable to post form values back to Google using wp_remote_post()."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Added a setting to allow hiding the cURL transport missing message on the Dashboard."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Added a check to ensure jQuery script isn't output more than once."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Remove hook into \"the_content\" to reduce potential conflicts with other plugins (e.g. Wordpress SEO plugin by Yoast)."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Added placeholders for some of the form fields when defining a Form within the UI."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Refactored code to which assembles arguments for wp_remote_post() to construct the body argument as an array as opposed to a URL formatted string of concatenated parameters.  The long string was causing problems with newer versions of PHP.  The array of arguments is much cleaner (thanks to David Högborg for providing the basics of a patch)."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Failed to update stable release tag preventing v0.61 from rolling out."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed some default CSS rules which were incorrect."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Added support for multiple instances of the same form on a single page."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Beta reference removed from version string."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Added ability to preset values for Google form as part of WordPress URL."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Added new CSS declarations to default plugin CSS to account for recent changes by Google to Forms."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Added ability to define fields as \"hidden\" and preset with a user defined or system defined value."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed validation limitation which only allowed one validation rule per input."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Added basic support (CSS, jQuery) to use WordPress Google Form to view a Google Spreadsheet within WordPress."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed bug when radio button and checkbox responses contained apostrophe characters."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed bug when text entry box content contained an ampersand which ended up encoded in the Google sheet."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed bug(s) with plugin settings which are controlled with checkboxes not being able to be unchecked."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Added Reset button to return plugin settings to their default state."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed problem handling newlines (carriage returns) in textarea entries."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Added ability to translate \"What is\" Captcha phrase."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Updated language translation files."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Incorporated es_ES language support from TBD."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Incpororated Transient support patch from TBD."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Added support for UTF-8 characters in Google Forms."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Resolved bug with embedded tabs in form response values."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Improved handling of default settings for new form creation."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Added multi-site support for Transients."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Added support for the placeholder attribute on input tags."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Added internationalization support for jQuery Validation messages."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "New language support files."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "New jQuery Validation based custom validation option."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed problem with escaped characters ending up in Google spreadsheet."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Moved transport control out of debug module and into core code so it can be a permanent setting for some server environments."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed PHP warning messages which happen with Logging Enabled when some of the server variables don't exist."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed bug with Form Submission Log setting stickiness."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Added an optional CAPTCHA message which will appear below the CAPTCHA input when set."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Added CSS rule to hide Google's new Edit Link \"feature\"."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Added support for link (A) elements with class attributes when call wp_kses()."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Added CSS rule to suppress redudant information on Scale widgets."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed typos on Options page."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed long standing bug with Default Options sometimes not initializing or saving correctly."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Added FAQ content for common questions."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Updated CSS information to account for CSS changes in new Google Forms."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed jQuery syntax error which happens when validation is on but CAPTCHA and Email User is off."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Added new CSS to hide the \"Never submit passwords through Google Forms.\" message by default."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Inadvertently made help text invisible with CSS, updated default CSS accordingly."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed a Javascript error which occurs when using Google Default text overrides AND the form didn't have an \"Other\" radio button choice."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed jQuery syntax errors introduced in certain combinations of form options which resulted in the confirmation page not working."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Added support for columns!  New <em>columns='N'</em> short code attribute will split the form into columns."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed CSS for input fields so buttons are not 300px wide by default."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Began process of deprecating \"gform\" prefix which will be replaced with \"wpgform\" prefix for CSS classes."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Moved CAPTCHA (when in use) from below the submit button to above the submit button."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Added WordPress Google Form Custom Post Type."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Added new shortcode <em>wpgform</em> to support WordPress Google Form CPT."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Added error checking on wp_remote_post() to prevent confirmation page redirect when data wasn't actually posted successfully."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Added support for optional end user email field on forms.  When enabled, the user email is required and must be valid.  This feature is only available from the Google Forms CPT editor."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Migrated scraping of WordPress Plugin Repository content from wp_remote_get() and HTML parsing to use WordPress Plugin API eliminating potential problems with preg_match_all() which was prone to crashing on some installations."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed jQuery syntax error in validation selector which caused CAPTCA jQuery not to run on some browsers (e.g. Chrome)."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Added URL of page where form was submitted from to confirmation email."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Added support for logging form submissions as post meta data."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed problems with multi-page Google forms introduced with re-design of Google Forms."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Added support for overriding the default Google Button and Required text.  This is useful when Google servers think the form should be rendered in a language that isn't the same as the rest of the form (e.g. Chinese)."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Rearranged Options page to support new options.  Debug tab is now Advanced Options."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed CAPCHA bug when validation wasn't specifically enabled.  CAPTCHA requires validation."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Added default CSS to suppress new Google Forms footer disclaimer."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Added more overrides for Google Default text (Hints for Radio Buttons and Check Boxes, the Other option for Radio Buttons)."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed a bug which lost current state of Override Settings which disabled overrides."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Added support for CAPTCHA operators (+, -, *)"
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Added support for three (3) CAPTCHA terms"
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed Pagination bug when viewing the form submission log."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Re-arranged Options tabs so most common options are the Options tab, less common on the Advanced tab."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Added support for rendering forms on public CPT URLs."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed odd Javascript syntax error which is only an issue with IE7."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Updated load of jQuery UI Tabs CSS to latest version."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Moved generated jQuery script from part of the form to the WordPress wp_footer action."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed bug preventing options which are enabled by default from being turned off."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Reimplemented shortcode attribute <em>br='on'</em> usinq jQuery instead of preg_replace()."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Reimplemented shortcode attribute <em>legal='off'</em> usinq jQuery instead of preg_replace()."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed DEBUG mode so it will work with PHP 5.2 (which doesn't support anonymous functions)."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed CSS prefix bugs which prevented CSS prefix from being applied to all Google CSS classes."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed typos in ReadMe file."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Added simple math based CAPTCHA support."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Reintroduced jQuery Validation for checking required fields."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Improved support for multiple forms on one page."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed several bugs where CSS prefix, when used, was not output in some places."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Moved Debug control to their own tab on the settings page."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Added new Debug options to facilicate chasing down HTTP API issues."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed bug where the CSS prefix, when used, was not being applied properly to elements which had more than one class.  Only the first class was properly prefixed."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Removed leftover debug code.  Again.  :-("
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Added new attribute *unitedthemehack='on|off', which defaults to 'off'.  This attribute allows WordPress Google Form to work correctly with Paralleus' Unite theme (which mucks with the submit button(s) on the Google Form preventing the form from being submitted)."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Removed debug code left in from working on problem fixed in v0.36."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed inacuracies in ReadMe.txt file which caused repository not to show available update."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed a bug which appears when the Browser Check option is enabled.  There was a conflict in the server response from Google and the server response from WordPress due to overwriting a variable."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed format of plain text email response when email is enabled for form submission.  The information in the email was being inserted into the template incorrectly."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Changed format of email to use the title of the page/post instead of the permalink to the form."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Added new shortcode attribute <strong>spreadsheet</strong>.  The value <strong>spreadsheet</strong> attribute is a full URL to a shared Google Docs Spreadsheet which contains the responses to the form.  A link to the Spreadsheet is included in the email notification when enabled."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed syntax error which caused plugin to fail.  Whoops."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed inacuracies in ReadMe.txt file."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "New option to control Bcc to blog admin when using email notification.  By default this option is enabled to allow plugin to behave as it has in prior versions."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed bug in processing default plugin settings which are on by default.  New options which are on by default were not recognized."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed activation bug which didn't set all of the default settings correctly."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Separation of rendering and processing of the Google Form to better work with sites that make multiple calls to <code>do_shortcode()</code>."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Added a new option to enable \"debug\".  Enabling debug will add some hidden information to the page.  The visibility of this hidden information can be toggled on an off using a link which is inserted into the page above form.  This debug information is useful for chasing down odd behavior, in particular 403 errors which tend not to be real obvious."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Significant change to better support servers which have Apache ModSecurity enabled.  Sites which employ ModSecurity may result in 403 errors which are hard to determine because in most cases, the page with the form on it will simply be displayed again.  The plugin now tries to detect 403 errors and when found, will issue a message as part of the form rendering."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Changed generated CSS to limit the possibility that it is affected by 'the_content' or 'wpautop' filters resulting in CSS errors.  This rare situation would prevent the custom CSS from being applied correctly."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Added ability to specify email address when email='on' attribute is in use via new attribute 'sendto'."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Changed generated Javascript to limit the possibility that it is affected by 'the_content' or 'wpautop' filters resulting in Javascript errors.  This rare situation would prevent the page confirmation or redirection from loading correctly."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed bug with missing GetPageURL method which appears when email confirmation is enabled (email='on')."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Added ability to check and warn for old and/or unsupported browsers.  There is an option on the WordPress Google Form settings page to enable this check.  When an old or unsupported browser is detected, a message will be displayed on top of the form.  The browser check is based on the same functionality that WordPress uses on the Dashboard."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Changed default custom confirmation behaviour has reverted back to using a javascript redirect as it did from v0.11 through v0.25."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Added new shortcode attribute, <strong>style</strong>, to control how confirmation pages should be handled.  There are two options:  <strong>style='redirect'</strong> which is the default and <strong>style='ajax'</strong> which loads the page content via AJAX."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Added new CSS classes to support errors and warnings for the browser check and the inability to load Google Forms."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Cleaned up Options page GUI."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Added new shortcode attribute <strong>email='on|off'</strong>, the default setting is 'off'."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Changed confirmation page from a hard redirect to an AJAX page load."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Added new email format choice on the Options page, default is HTML."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Cleaned up some dead code and comments."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed problem with checkbox processing when using the prefix attribute."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed problem with hiding legal links when using the prefix attribute."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed problem with <strong>legal='off'</strong> attribute not being processed correctly."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed minor typos and other assorted nits."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed problem with UTF-8 characters not being passed through the form correctly."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed problem where CSS declarations were emitted as plain text when they shouldn't be."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed bug with checkboxes not working because jQuery wasn't loaded."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Added ability to display a Javascript alert box upon successful form submission."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed more syntax errors in the ReadMe.txt markdown."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "More documentation cleanup."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Documentation updates in the READMME.txt file."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Update information on About Tab to reflect new architecture."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed version numbering so the WordPress repository would work!"
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed regular expression bug which prevented complex Google Forms from working correctly.  Any form which had more than 9 fields or had enough edits such that the form ids contained more than one digit which have been affected by this bug."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed bug with <em>select</em> input tags.  Selected value was not being retained on a multipage form."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed bug with passing checkbox values.  Only one value, the last selected, was being passed for a multiple choice question."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Rearchitected process for passing parameters to the Google Form with wp_remote_post()."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed bug with default options which manifested itself always loading the default options for any setting which is on by default even when turned off by user."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Removed loading of jQuery-Validate as it is no longer used."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Removed debug and other deprecated code (e.g. wpgform_footer())."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed minor bug with default options which manifested itself as an array index warning on the Options page."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed bug where values for check boxes and radio buttons was not retained when going back on multi-page Google Forms."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Debug code removed and typos fixed."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Re-architected plugin to support multi-page Google Forms."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed bug which resulted in form being redisplayed when using default confirmation."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Deprecated use of jQuery Validaor plugin, it is no longer needed as Google is now doing required field checking and validation as part of the new architecture."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "New CSS styles added to support new architecture and confirmation page rendering."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Default CSS style for div.ss-q-help changed to <code>display: block;</code>."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "New attribute <em>title</em> added to allow supressing for form title."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "New attribute <em>maph1h2</em> added to map H1 elements to H2 elements."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Added support for required fields using the jQuery Validate plugin."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Added CSS classes to support jQuery required field validation."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Added screenshots."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed formatting of CSS section in ReadMe.txt file."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Added documention for <em>br</em> and <em>suffix</em> short code attributes."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Added new shortcode attribute <em>br</em> which can be set to <em>on</em> or <em>off</em>.  The <em>br</em> attribute will insert <br /> tags between the labels and the input fields causing them to render on top of one another much they appear on Google Forms.  The default setting is <em>off</em>."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed problem due to Javascript embedded in Google Form.  It isn't necessary so it is stripped out."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Tweaked several default CSS settings, most notably the default width of text entry fields."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Cleaned up a bunch of debug code."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed problem with CSS text from Google form theme appearing as text on the embedded form.  This text should have been stripped and in some cases it wasn't."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed typos in ReadMe.txt file."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed problem with tabs not working correctly on Settings page."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Corrected default setting on donation link."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Added support for missing Google Forms fields."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Added more CSS styles based on new form fields."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Added FAQs and Usage content by retrieving it from the WordPress repository."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Removed some debug code."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Added support for <code>&lt;select&gt;</code> and <code>&lt;option&gt;</code> tags."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Fixed Plugin URI path"
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Added links to demo content"
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Cleaned up ReadMe.txt file."
+msgstr ""
+
+#. Found in change log list item, changelog list item.
+msgid "Initial release."
+msgstr ""
+
+#. Found in change log paragraph, changelog paragraph.
+msgid "Incporated a patch version of jQuery Columnizer to fix problem which appears in WordPress 3.6 which includes jQuery 1.10."
+msgstr ""
+
+#. Found in faq header.
+msgid "Why I do I have a \"cURL transport missing\" message on my Dashboard?"
+msgstr ""
+
+#. Found in faq header.
+msgid "Will the plugin work without the cURL transport?"
+msgstr ""
+
+#. Found in faq header.
+msgid "How can I add the cURL transport to WordPress?"
+msgstr ""
+
+#. Found in faq header.
+msgid "The default style is ugly. Can I change it?"
+msgstr ""
+
+#. Found in faq header.
+msgid "Why are the buttons and some other text on form in Chinese (or some other language)?"
+msgstr ""
+
+#. Found in faq header.
+msgid "Why do I get a 403 error?"
+msgstr ""
+
+#. Found in faq header.
+msgid "No matter what I do, I always get the \"Unable to retrieve Google Form.  Please try reloading this page.\" error message.  Why is this?"
+msgstr ""
+
+#. Found in faq header.
+msgid "Do you have a demo running?"
+msgstr ""
+
+#. Found in faq header.
+msgid "Content appears, but it's not my form and it looks odd! Why?"
+msgstr ""
+
+#. Found in faq header.
+msgid "Why doesn't my form look the same as it does when I use the stand alone URL?"
+msgstr ""
+
+#. Found in faq header.
+msgid "Google supports embedding forms, why isn't that sufficient?"
+msgstr ""
+
+#. Found in faq header.
+msgid "I really like having a colon character after my form labels, is that possible?"
+msgstr ""
+
+#. Found in faq header.
+msgid "I don't like the redirection behavior of the custom confirmation, can you change it back to the way it worked in v0.10?"
+msgstr ""
+
+#. Found in faq header.
+msgid "Can I change the range of values the CAPCTHA is based on?"
+msgstr ""
+
+#. Found in faq header.
+msgid "Can I change the math operator the CAPTCHA is based on?"
+msgstr ""
+
+#. Found in faq header.
+msgid "How do specify which fields go in which columns when splitting a form across multiple columns?"
+msgstr ""
+
+#. Found in faq list item.
+msgid "By adding the necessary CSS to your theme's style sheet."
+msgstr ""
+
+#. Found in faq list item.
+msgid "Through the WordPress Google Form custom CSS setting."
+msgstr ""
+
+#. Found in faq list item.
+msgid "<p>The most common reason for this error is from pasting the Google Form URL into the WordPress WYSIWYG Editor while in \"Visual\" mode.  When you paste the URL, the Visual Editor recognizes at a link and wraps the text in the apprpriate HTML tags so the link will work.   Visually you'll trypically see the URL in a different color than the rest of the short code text.  If this happens, simply click anywhere in the link and use the \"Break Link\" icon (broken chain) on the tool bar to remove the link.  The other alternative is to toggle to HTML mode and manually remove the HTML which is wrapped around the URL.</p>"
+msgstr ""
+
+#. Found in faq list item.
+msgid "<p>Validate that the WordPress HTTP API is working correctly.  If you are seeing HTTP API errors on the WordPress Dashboard or when you attempt to access the plugin repository through the Dashboard, the WordPress Google Form will likely fail too.  It requires the WordPress HTTP API to be working.  With some free hosting plans, ISPs disable the ability to access remote content.</p>"
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "There was a change to the WordPress HTTP API in version 3.7 which resulted in wp_remote_post() no longer working with the streams and fsockopen transports when posting form data back to Google Docs.  The cURL transport does work reliably so a check has been added and a notification is issued when the cURL transport is missing.  This notification can be hidden by selecting the proper checkbox on the plugin settings page."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Up until WordPress 3.6.1, the plugin worked with any of the supported transports (streams, fsockopen, curl).  Currently only cURL is known to work properly.  You may have some success with other transports IF your form does not include checkboxes.  Checkboxes definitely do not work with anything but the cURL transport."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "The cURL transport is enabled by WordPress when PHP support for cURL is detected.  It isn't something which can be added to WordPress, it needs to be present in the PHP version your web server is running.  Contact your hosting provider to inquire about adding cURL support to PHP for your WordPress site."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Yes, there are two ways to change the style (aka apearance) of the form."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Google Forms include plenty of <a href=\"http://en.wikipedia.org/wiki/Cascading_Style_Sheets\">CSS</a> hooks. Refer to the <strong>CSS</strong> section for further details on styling the form.  There are also some CSS solutions posted to questions users have raised in the Tips and Tricks section of <a href=\"http://michaelwalsh.org/wordpress/wordpress-plugins/wpgform/tips-and-tricks/\">this page</a>."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "This problem occurred fairly infrequently with the older version of Google Forms but with the upgrade in early 2013, it seems to happen much more often.  The solution to this problem depends on which URL format your published Google Form takes on (old or new)."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "If your form URL looks like this, then you are using the older version of Google Forms:"
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "To force the language to English, you need to include the parameter <strong>hl=en</strong>.  Placement doesn't matter except it must appear before the #gid=0 (or similar syntax depending on which sheet you're using).  You will either need to prefix or append the &amp; character to ensure the parameter is passed correctly."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "If your form URL looks like this, then you are using the new version of Google Forms:"
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "To force the form to use English you would append <strong>\"?hl=en\"</strong> to the URL so it looks like this:"
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "You can find an <a href=\"http://michaelwalsh.org/wordpress/wordpress-plugins/wpgform/sample-form-in-french/\">example Google Form with French buttons</a> on the plugin web site."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "There a number of reasons to get a 403 error but by far the most common one encountered so far is due to ModSecurity being installed by your web hosting provider.  Not all providers deploy ModSecurity but enough do that it comes up every once in a while.  If your provider is running ModSecurity and your version of the plugin is v0.30 or lower, you will likely see odd behavior where when the form is submitted, the page is simply rendered again and the data is never actually sent to Google.  There isn't any error message to indicate what might be wrong."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Version 0.31 fixes this problem for <em>most</em> cases but there is still a chance that it could crop up.  If your provider has enabled ModSecurity AND someone answers one of the questions on your form with a URL (e.g. http://www.example.com), then very likely ModSecurity will kick in an issue a 403 error.  The plugin is now smart enough to detect when the error is issued and let you know what is wrong.  Unfortunately there isn't currently a solution to allow URLs as responses when ModSecurity issues a 403 error."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Some themes filter page content which could potentially affect forms.  If the filter modifies the Google Form HTML in such a way (e.g. changing the value of a hidden form variable) such that it is different that what Google is expecting upon form submission, a 403 error may result."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "The most common reason for this error is from pasting the Google Form URL into the WordPress WYSIWYG Editor while in \"Visual\" mode.  When you paste the URL, the Visual Editor recognizes at a link and wraps the text in the apprpriate HTML tags so the link will work.   Visually you'll trypically see the URL in a different color than the rest of the short code text.  If this happens, simply click anywhere in the link and use the \"Break Link\" icon (broken chain) on the tool bar to remove the link.  The other alternative is to toggle to HTML mode and manually remove the HTML which is wrapped around the URL."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Validate that the WordPress HTTP API is working correctly.  If you are seeing HTTP API errors on the WordPress Dashboard or when you attempt to access the plugin repository through the Dashboard, the WordPress Google Form will likely fail too.  It requires the WordPress HTTP API to be working.  With some free hosting plans, ISPs disable the ability to access remote content."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Yes, see a demo here:  <a href=\"http://michaelwalsh.org/wordpress/wordpress-plugins/wpgform/\">Demo of WordPress Google Form plugin</a>"
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Feel free to submit a response and then view other responses as well."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "You should triple-check that you've published your Form. Google provides instructions for doing this. Be sure to follow steps 1 and 2 in <a href=\"http://docs.google.com/support/bin/answer.py?hl=en&amp;answer=47134\">Google Spreadsheets Help: Publishing to the Web</a> as the same process applies to Forms and Spreadsheets."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Google Forms can have <em>Themes</em> which are really nothing more than CSS defitinions to change the form's appearance.  None of the Google CSS is brought into WordPress, just the CSS class names and the HTML used to define the form.  Refer to the <strong>CSS</strong> section for more information on styling your form."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "For many uses the simple embedding of a Google Form in an <code>&lt;iframe&gt;</code> may be sufficient.  However, if you want your forms to take on the look and feel of your WordPress site while retaining the ability to collect information in a Google Spreadsheet, the WordPress Google Form plugin may be for you."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Sure.  You can use the following CSS to have the colon character appear after all of your form labels."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Unfortunately not.  I understand that the older behavior is preferable as it looks cleaner for the end user however there is no way to support multi-page Google Forms using the old model.  The requirement to support multi-page Google Forms is a higher priority than the older confirmation model based on the overwhelming feedback received to support multi-page forms.  In v0.26 a new confirmation behavior was introduced which uses AJAX to update the page with the content from the custom confirmation page.  In v0.27 the redirection mechanism has returned to be the default behavior but if the AJAX methodology is preferred, it is available by setting the <code>style='ajax'</code> attribute within the shortcode."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Not at this time.  However, you can choose between two (2) or three (3) terms for the CAPTCHA."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Yes.  Beginning in v0.46 you can specify which operator(s) (+, -, *) the CAPTCHA will be based on."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "This isn't possible.  The process of splitting the form into columns is automatic and will try to balance the colummn content.  You can rearrange the fields on the Google side to have some affect on their placement but there isn't any control over the exact column layout or where splits are inserted."
+msgstr ""
+
+#. Found in remaining content header.
+msgid "Usage"
+msgstr ""
+
+#. Found in remaining content header.
+msgid "License"
+msgstr ""
+
+#. Found in remaining content header.
+msgid "CSS"
+msgstr ""
+
+#. Found in remaining content header.
+msgid "Customizing Google Form CSS"
+msgstr ""
+
+#. Found in remaining content header.
+msgid "Default Google Form CSS"
+msgstr ""
+
+#. Found in remaining content list item.
+msgid "<strong>id</strong>:  The numeric id of the Google Form Custom Post Type."
+msgstr ""
+
+#. Found in remaining content list item.
+msgid "<strong>uid</strong>:  A unique string (e.g. 'A-') used to ensure form element ID attributes are unique when a form appears on a page multiple times. (optional)"
+msgstr ""
+
+#. Found in remaining content list item.
+msgid "<strong>form</strong>:  The full URL to the published Google Form.  You must be able to open this URL successfully from a browser for the <strong>gform</strong> shortcode to work properly."
+msgstr ""
+
+#. Found in remaining content list item.
+msgid "<strong>confirm</strong>:  A full URL to the confirmation (e.g. <em>Thanks for your submission!</em>) page.  Be default Google displays a very basic confirmation page which cannot be integrated easily with your WordPress site.  The <em>confirm</em> attribute allows the form submission to land on a page of your choosing.  <strong>It is strongly encouraged that you make use of a confirmation page.</strong>  It will make the form submission process cleaner and clearer to the end user.  The confirmation page will be displayed by a page redirect unless a different behavior is specified using the <strong>style</strong> attribute."
+msgstr ""
+
+#. Found in remaining content list item.
+msgid "<strong>style</strong>:  Specify how the custom confirmation page should be presented.  Legal values for the <strong>style</strong> attribute are <strong>redirect</strong> and <strong>ajax</strong> (e.g. <strong>style='redirect'</strong> or <strong>style='ajax'</strong>)."
+msgstr ""
+
+#. Found in remaining content list item.
+msgid "<strong>alert</strong>:  A message to display upon successful form submission in a Javascript Alert box (e.g. <em>Thanks for your submission!</em>)."
+msgstr ""
+
+#. Found in remaining content list item.
+msgid "<strong>class</strong>:  Google Forms are full of classes but the WordPress Google Form plugin does not bring their definitions into page when importing the form.  The <em>class</em> attribute allows the addition of one or more CSS classes to the DIV which wraps the Google Form.  To add multiple classes, simply separate the class names with spaces."
+msgstr ""
+
+#. Found in remaining content list item.
+msgid "<strong>legal</strong>:  By default Google Forms have a <em>Powered by Google Docs</em> section at the bottom of the form which includes links to Google TOS and other Google information.  If you do not want to see this information as part of the form, add <code>legal='off'</code> to your shortcode usage.  The content remains in the form, it is simply hidden from the end user using CSS."
+msgstr ""
+
+#. Found in remaining content list item.
+msgid "<strong>br</strong>:  For a &lt;br&gt; tag to be inserted between the form label and the input text box by setting the <em>br</em> attribute to <em>on</em>.  This will result in the form label and the input box being stacked on top of one another."
+msgstr ""
+
+#. Found in remaining content list item.
+msgid "<strong>prefix</strong>:  Google Forms make use 20+ CSS classes.  If you use multiple forms and want to style them each differently, you can add a <em>prefix</em> which will be added to beginning of each class name used in the Google Form."
+msgstr ""
+
+#. Found in remaining content list item.
+msgid "<strong>suffix</strong>:  Append a character string to the end of each form label.  This can also be accomplished using CSS, refer to the CSS section."
+msgstr ""
+
+#. Found in remaining content list item.
+msgid "<strong>title</strong>:  By default Google Forms have title wrapped in a &lt;h1&gt; tag.  If you do not want to include this form title as part of the form, add <code>title='off'</code> to your shortcode usage.  The &lt;h1&gt; content is removed from the form."
+msgstr ""
+
+#. Found in remaining content list item.
+msgid "<strong>maph1h2</strong>:  By default Google Forms have title wrapped in a &lt;h1&gt; tag.  If you want the form title but not as an &lt;h1&gt; element, add <code>maph1h2='on'</code> to your shortcode usage.  The &lt;h1&gt; elements will be mapped to &lt;h2&gt; elements.  The CSS class attributes remain unchanged."
+msgstr ""
+
+#. Found in remaining content list item.
+msgid "<strong>email</strong>:  Notify the site's WordPress administrator (or sendto email address) that a form has been submitted by setting the <strong>email</strong> attribute to <strong>on</strong>.  This will result in an email being sent to the blog administrator (or sendto email address) letting them know a form was submitted with the URL of the form along with the date and time of submission."
+msgstr ""
+
+#. Found in remaining content list item.
+msgid "<strong>sendto</strong>:  Notify the \"sendto\" email address that a form has been submitted by setting the <strong>email</strong> attribute to <strong>on</strong>.  This will result in an email being sent to the \"sendto\" letting them know a form was submitted with the URL of the form along with the date and time of submission.  The email message will always be sent to the blog administrator via Bcc."
+msgstr ""
+
+#. Found in remaining content list item.
+msgid "<strong>spreadsheet</strong>:  The full URL to the \"Shared\" Google Docs Spreadsheet which stores the form responses.  You must be able to open this URL successfully from a browser for the link in the email to work properly.  This attribute is used in conjunction with the <strong>email</strong> attribute, it has no effect when the <strong>email</strong> attribute is not turned <strong>on</strong>."
+msgstr ""
+
+#. Found in remaining content list item.
+msgid "<strong>unitethemehack</strong>:  Off by default, this attribute should be enabled, <code>unitethemehack='on'</code>, when using the <a href=\"http://themeforest.net/item/unite-wordpress-business-magazine-theme/90959\">Unite theme from Paralleus</a>.  The Unite theme manipulates the submit button(s) on a page, the result of which is a button that prevents the Google form from being submitted.  Turning this attribute on enables a hack which inserts <em>class=\"noStyle\"</em> to all submit buttons, preventing Unite from mucking with them."
+msgstr ""
+
+#. Found in remaining content list item.
+msgid "<strong>validation</strong>:  Off by default, this attribute can be enabled, <code>validation='on'</code>, to add jQuery based form validation support using the <a href=\"http://bassistance.de/jquery-plugins/jquery-plugin-validation/\">jQuery Validate Plugin</a>.  Enabling this optional attribute will allow inline checking without form submission to Google (which also does checking for required fields).  Error messages can be styled using the <em>gform-error</em> CSS class."
+msgstr ""
+
+#. Found in remaining content list item.
+msgid "<strong>captcha</strong>:  Off by default, this attribute can be enabled, <code>captcha='on'</code>, to add a simple math based <a href=\"http://en.wikipedia.org/wiki/CAPTCHA\">CAPTCHA</a> to the Google Form.  The CAPTCHA only appears for the final submit on multi-page forms. The CAPTCHA error message can be styled using the <em>gform-error</em> CSS class."
+msgstr ""
+
+#. Found in remaining content list item.
+msgid "<strong>columns</strong>:  The number of columns the form should be split into.  By default the form appears in a single column the same way it is designed in Google Docs."
+msgstr ""
+
+#. Found in remaining content list item.
+msgid "The WordPress Google Form plugin includes a setting to include custom CSS and a field where custom CSS can be entered.  This CSS will be preserved across themes."
+msgstr ""
+
+#. Found in remaining content list item.
+msgid "Add custom CSS declarations to your WordPress theme."
+msgstr ""
+
+#. Found in remaining content paragraph.
+msgid "As features have been added, usage of the <code>gform</code> shortcode has grown increasing complex (the <code>gform</code> shortcode is now <em>deprecated</em>).  Begining with v0.46, a second shortcode, <code>wpgform</code> has been introduced in conjunction with a Custom Post Type to define forms deprecating usage of the <code>gform</code> shortcode. Usage of the new shortcode and Custom Post Type is much, much easier than the complexities of the original <code>gform</code> shortcode.  Users are strong encouraged to migrate usage to the new shortcode and Custom Post Type.  New features will only be added to the Custom Post Type usage model."
+msgstr ""
+
+#. Found in remaining content paragraph.
+msgid "The WordPress Google Form shortcode <code>wpgform</code> supports a single attribute.  The rest of the controls are derived from the information stored with the Custom Post Type."
+msgstr ""
+
+#. Found in remaining content paragraph.
+msgid "<em>NOTE:</em>  In the above syntax, values enclosed in angle brackets &lt;&gt;, indicate a string you need to replace with an appropriate value.  Do not include the angle brackets in your string!"
+msgstr ""
+
+#. Found in remaining content paragraph.
+msgid "The Google Form <em>deprecated</em> shortcode <code>gform</code> supports a number of attributes that allow further control and customization of the Google Form."
+msgstr ""
+
+#. Found in remaining content paragraph.
+msgid "This plugin is available under the GPL license, which means that it's free. If you use it for a commercial web site, if you appreciate my efforts or if you want to encourage me to develop and maintain it, please consider making a donation using Paypal, a secured payment solution. You just need to click the donate button on the the <a href=\"http://michaelwalsh.org/wordpress/wordpress-plugins/wpgform/\">plugin overview page</a> and follow the instructions."
+msgstr ""
+
+#. Found in remaining content paragraph.
+msgid "Google Forms make use of 20+ CSS class definitions.  By default, the WordPress Google Form plugin includes CSS declarations for all of the classes however the bulk of them are empty.  The default CSS sets the font and makes the entry boxes wider.  The default CSS that ships with WordPress Google Form can optionally be turned off via the WordPress Google Form settings."
+msgstr ""
+
+#. Found in remaining content paragraph.
+msgid "There are two ways to customize the Google Form CSS."
+msgstr ""
+
+#. Found in remaining content paragraph.
+msgid "As of 2013-12-04, the following is are the CSS classes which Google Forms make use of.  The CSS below represents the default CSS provided by WordPress Google Form.  These CSS definitions can be copied and pasted into your theme CSS or the WordPress Google Form custom CSS setting and changed as desired.  Some of the classes are redundant to account for both the new and old style of Google Forms."
+msgstr ""
