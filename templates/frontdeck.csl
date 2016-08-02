@@ -1,5 +1,5 @@
 ﻿{
-  "title": "principal",
+  "title": "My Custom Template",
   "elements": [
     {
       "_type": "section",
@@ -347,12 +347,18 @@
         {
           "_type": "row",
           "title": "Copy of New Item 2",
-          "_column_layout": "1/4 + 1/4 + 1/4 + 1/4",
+          "_column_layout": "1/5 + 1/5 + 1/5 + 1/5 + 1/5",
           "elements": [
             {
               "_type": "column",
               "_active": true,
-              "size": "1/4",
+              "size": "1/5",
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/5",
+              "_active": true,
               "elements": [
                 {
                   "_type": "image",
@@ -379,7 +385,7 @@
             },
             {
               "_type": "column",
-              "size": "1/4",
+              "size": "1/5",
               "_active": true,
               "elements": [
                 {
@@ -407,7 +413,7 @@
             },
             {
               "_type": "column",
-              "size": "1/4",
+              "size": "1/5",
               "_active": true,
               "elements": [
                 {
@@ -435,45 +441,18 @@
             },
             {
               "_type": "column",
-              "size": "1/4",
+              "size": "1/5",
               "_active": true,
-              "elements": [
-                {
-                  "_type": "image",
-                  "elements": [],
-                  "image_style": "circle",
-                  "link": true,
-                  "href": "http://circuitostartup.com/",
-                  "href_title": "circuitostartup.com",
-                  "href_target": true,
-                  "alt": "circuitostartup",
-                  "src": "http://infinitepar.dev/infinitepar/www/wp-content/uploads/2016/07/circuitostartup.png"
-                },
-                {
-                  "_type": "text",
-                  "elements": [],
-                  "content": "<h5>Circuito Startup</h5>"
-                },
-                {
-                  "_type": "text",
-                  "elements": [],
-                  "content": "Rede de negócios para apoio a empreendedores e criação de startups. Saiba mais sobre startups. Descubra lugares, eventos, serviços e mais."
-                }
-              ]
-            },
-            {
-              "_type": "column",
-              "size": "1/1",
-              "_active": false,
               "elements": []
             },
             {
               "_type": "column",
-              "size": "1/1",
+              "size": "1/6",
               "_active": false,
               "elements": []
             }
-          ]
+          ],
+          "id": "centralizado"
         }
       ]
     },
