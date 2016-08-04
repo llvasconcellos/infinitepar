@@ -22,7 +22,7 @@ define('DB_NAME', 'infinitepar');
 define('DB_USER', 'root');
 
 /** Senha do banco de dados MySQL */
-define('DB_PASSWORD', '***REMOVED***');
+define('DB_PASSWORD', '*************');
 
 /** nome do host do MySQL */
 define('DB_HOST', 'localhost');
