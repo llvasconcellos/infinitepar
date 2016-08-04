@@ -21,11 +21,8 @@
                   "content": "[x_dropcap]A[/x_dropcap] INFINITEPAR possuí foco em empresas de inovação tecnológica nas áreas de educação, desenvolvimento humano, mobilidade e transporte, saúde, empreendedorismo social, tecnologia financeira, energia renovável e cidades inteligentes.\nSe você tem uma ideia nessa área preencha nosso formulário abaixo com algumas informações de seu negócio e nós entraremos em contato. Quando um projeto casa com os ideais da INFINITEPAR ajudamos o empreendedor com o direcionamento a mentorias e investidores anjo de nosso portfolio de relacionamentos!"
                 },
                 {
-                  "_type": "custom-headline",
-                  "elements": [],
-                  "content": "Questionário para pre-análise de projetos",
-                  "accent": true,
-                  "text_align": "l"
+                  "_type": "gap",
+                  "elements": []
                 }
               ]
             },
@@ -63,6 +60,77 @@
         },
         {
           "_type": "row",
+          "_column_layout": "1/3 + 1/3 + 1/3",
+          "elements": [
+            {
+              "_type": "column",
+              "_active": true,
+              "size": "1/3",
+              "elements": [
+                {
+                  "_type": "counter",
+                  "elements": [],
+                  "num_end": "20",
+                  "num_suffix": "+",
+                  "text_above": "",
+                  "text_below": "Startups Aceleradas",
+                  "num_color": "hsl(140, 73%, 39%)"
+                }
+              ]
+            },
+            {
+              "_type": "column",
+              "size": "1/3",
+              "_active": true,
+              "elements": [
+                {
+                  "_type": "counter",
+                  "elements": [],
+                  "num_end": "5",
+                  "text_above": "",
+                  "text_below": "Países diferentes",
+                  "num_color": "hsl(140, 73%, 39%)"
+                }
+              ]
+            },
+            {
+              "_type": "column",
+              "size": "1/3",
+              "_active": true,
+              "elements": [
+                {
+                  "_type": "counter",
+                  "elements": [],
+                  "num_end": "100",
+                  "num_suffix": "%",
+                  "text_above": "",
+                  "text_below": "Crescimento",
+                  "num_color": "hsl(140, 73%, 39%)"
+                }
+              ]
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            }
+          ]
+        },
+        {
+          "_type": "row",
           "_column_layout": "1/1",
           "elements": [
             {
@@ -70,6 +138,26 @@
               "_active": true,
               "size": "1/1",
               "elements": [
+                {
+                  "_type": "gap",
+                  "elements": []
+                },
+                {
+                  "_type": "prompt",
+                  "elements": [],
+                  "message": "Conheça as startups impulsionadas pela INFINITEPAR.",
+                  "heading": "Startups",
+                  "button_text": "Saiba Mais",
+                  "button_icon": "line-chart",
+                  "href": "/#desenvolva"
+                },
+                {
+                  "_type": "custom-headline",
+                  "elements": [],
+                  "content": "Questionário para pre-análise de projetos",
+                  "accent": true,
+                  "text_align": "l"
+                },
                 {
                   "_type": "raw-content",
                   "elements": [],

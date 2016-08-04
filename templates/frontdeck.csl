@@ -1,5 +1,5 @@
 ﻿{
-  "title": "My Custom Template",
+  "title": "frontdeck",
   "elements": [
     {
       "_type": "section",
@@ -75,7 +75,7 @@
                 {
                   "_type": "promo",
                   "elements": [],
-                  "content": "[x_feature_headline type=\"left\" level=\"h3\" looks_like=\"h3\" icon=\"dashboard\"]<a target=\"_blank\" href=\"/?page_id=74\">Startups</a>[/x_feature_headline]\nMentoria e desenvolvimento criativo empreendedor.",
+                  "content": "[x_feature_headline type=\"left\" level=\"h3\" looks_like=\"h3\" icon=\"dashboard\"]<a href=\"?page_id=74\">Startups</a>[/x_feature_headline]\nMentoria e desenvolvimento criativo empreendedor.",
                   "image": "http://infinitepar.dev/infinitepar/www/wp-content/uploads/2016/06/promo-startups.jpg",
                   "alt": "Startups"
                 }
@@ -89,7 +89,7 @@
                 {
                   "_type": "promo",
                   "elements": [],
-                  "content": "[x_feature_headline type=\"left\" level=\"h3\" looks_like=\"h3\" icon=\"usd\"]<a target=\"_blank\" href=\"/?page_id=80\">Negócios</a>[/x_feature_headline]\nImpulsão, inovação e consultoria.\n \n",
+                  "content": "[x_feature_headline type=\"left\" level=\"h3\" looks_like=\"h3\" icon=\"usd\"]<a href=\"?page_id=80\">Negócios</a>[/x_feature_headline]\nImpulsão, inovação e consultoria.\n \n",
                   "image": "http://infinitepar.dev/infinitepar/www/wp-content/uploads/2016/06/promo-negocios.jpg",
                   "alt": "Negócios"
                 }
@@ -103,7 +103,7 @@
                 {
                   "_type": "promo",
                   "elements": [],
-                  "content": "[x_feature_headline type=\"left\" level=\"h3\" looks_like=\"h3\" icon=\"lightbulb-o\"]<a target=\"_blank\" href=\"/?page_id=119\">Innovation</a>[/x_feature_headline]\nSoluções criativas e inovadoras para seu crescimento.",
+                  "content": "[x_feature_headline type=\"left\" level=\"h3\" looks_like=\"h3\" icon=\"lightbulb-o\"]<a href=\"?page_id=119\">Innovation</a>[/x_feature_headline]\nSoluções criativas e inovadoras para seu crescimento.",
                   "image": "http://infinitepar.dev/infinitepar/www/wp-content/uploads/2016/06/promo-inovacao.jpg",
                   "alt": "Innovation"
                 }
@@ -117,7 +117,7 @@
                 {
                   "_type": "promo",
                   "elements": [],
-                  "content": "[x_feature_headline type=\"left\" level=\"h3\" looks_like=\"h3\" icon=\"calendar\"]<a target=\"_blank\" href=\"/?page_id=84\">Eventos</a>[/x_feature_headline]\nConsolidando o conhecimento na prática.",
+                  "content": "[x_feature_headline type=\"left\" level=\"h3\" looks_like=\"h3\" icon=\"calendar\"]<a href=\"?page_id=84\">Eventos</a>[/x_feature_headline]\nConsolidando o conhecimento na prática.",
                   "image": "http://infinitepar.dev/infinitepar/www/wp-content/uploads/2016/06/promo-eventos.jpg",
                   "alt": "Eventos"
                 }
@@ -136,6 +136,61 @@
               "elements": []
             }
           ]
+        }
+      ]
+    },
+    {
+      "_type": "section",
+      "title": "Em busca da excelência",
+      "elements": [
+        {
+          "_type": "row",
+          "_column_layout": "1/1",
+          "elements": [
+            {
+              "_type": "column",
+              "_active": true,
+              "size": "1/1",
+              "elements": [
+                {
+                  "_type": "raw-content",
+                  "elements": [],
+                  "content": "[x_content_band bg_image=\"http://infinitepar.dev/infinitepar/www/wp-content/uploads/2016/07/excelencia.jpg\" border=\"all\" inner_container=\"true\" parallax=\"true\"]\n[x_gap size=\"100px\"]\n<a href=\"?page_id=74\">\n[x_custom_headline style=\"color: #fff;text-shadow: 2px 2px 2px rgba(27, 20, 20, 0.6);\" type=\"center\" level=\"h1\" looks_like=\"h1\" accent=\"true\"]Estamos em busca da excelência![/x_custom_headline]\n</a>\n[x_gap size=\"100px\"]\n[/x_content_band]"
+                }
+              ]
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            }
+          ],
+          "inner_container": false
         }
       ]
     },
@@ -454,7 +509,8 @@
           ],
           "id": "centralizado"
         }
-      ]
+      ],
+      "id": "desenvolva"
     },
     {
       "_type": "section",
@@ -526,12 +582,12 @@
       "elements": [
         {
           "_type": "row",
-          "_column_layout": "1/1",
+          "_column_layout": "1/2 + 1/2",
           "elements": [
             {
               "_type": "column",
               "_active": true,
-              "size": "1/1",
+              "size": "1/2",
               "elements": [
                 {
                   "_type": "custom-headline",
@@ -543,16 +599,38 @@
                 {
                   "_type": "text",
                   "elements": [],
-                  "content": "A INFINITEPAR atua dentro e fora do Brasil, diretamente onde o cliente está!",
-                  "text_align": "c"
+                  "content": "A INFINITEPAR atua dentro e fora do Brasil. Atualmente temos escritórios no Rio de Janeiro, Porto Alegre e Joinville, mas atendemos por videoconferência ou indo até você em qualquer localidade!"
+                },
+                {
+                  "_type": "text",
+                  "elements": [],
+                  "content": "<h5>Onde nos encontrar?</h5>\nRio de Janeiro: (TELEFONE)\nPorto Alegre: (TELEFONE)\nJoinville: (TELEFONE)\n\n<a href=\"mailto:contato@infinitepar.com.br\">contato@infinitepar.com.br</a>"
                 }
               ]
             },
             {
               "_type": "column",
-              "size": "1/1",
-              "_active": false,
-              "elements": []
+              "size": "1/2",
+              "_active": true,
+              "elements": [
+                {
+                  "_type": "custom-headline",
+                  "elements": [],
+                  "text_align": "c",
+                  "accent": true,
+                  "content": "Newsletter"
+                },
+                {
+                  "_type": "text",
+                  "elements": [],
+                  "content": "Quer ficar por dentro das novidades e informações da Infinitepar? Assine nossa newsletter!"
+                },
+                {
+                  "_type": "raw-content",
+                  "elements": [],
+                  "content": "<form id=\"mc4wp-form-1\" method=\"post\">\n\n<p>Seu e-mail (obrigatório)<br />\n    <input name=\"EMAIL\" placeholder=\"Seu endereço de email...\" required=\"\" type=\"email\"> </p>\n<p><button type=\"submit\" value=\"Cadastrar\">Cadastrar</button></p>\n\n<input name=\"_mc4wp_timestamp\" value=\"1470249325\" type=\"hidden\">\n<input name=\"_mc4wp_form_id\" value=\"154\" type=\"hidden\">\n<input name=\"_mc4wp_form_element_id\" value=\"mc4wp-form-1\" type=\"hidden\">\n</form>"
+                }
+              ]
             },
             {
               "_type": "column",
@@ -585,68 +663,6 @@
             "10px",
             "auto",
             "unlinked"
-          ]
-        },
-        {
-          "_type": "row",
-          "title": "New Item 2",
-          "_column_layout": "1/2 + 1/2",
-          "elements": [
-            {
-              "_type": "column",
-              "_active": true,
-              "size": "1/2",
-              "elements": [
-                {
-                  "_type": "text",
-                  "elements": [],
-                  "content": "A INFINITEPAR atua dentro e fora do Brasil. Atualmente temos escritórios no Rio de Janeiro, Porto Alegre e Joinville, mas atendemos por videoconferência ou indo até você em qualquer localidade!"
-                }
-              ],
-              "padding": [
-                "40px",
-                "0px",
-                "0px",
-                "0px",
-                "unlinked"
-              ]
-            },
-            {
-              "_type": "column",
-              "size": "1/2",
-              "_active": true,
-              "elements": [
-                {
-                  "_type": "text",
-                  "elements": [],
-                  "content": "<h5>Onde nos encontrar?</h5>\nRio de Janeiro: (TELEFONE)\nPorto Alegre: (TELEFONE)\nJoinville: (TELEFONE)\n\n<a href=\"mailto:contato@infinitepar.com.br\">contato@infinitepar.com.br</a>"
-                }
-              ]
-            },
-            {
-              "_type": "column",
-              "size": "1/1",
-              "_active": false,
-              "elements": []
-            },
-            {
-              "_type": "column",
-              "size": "1/1",
-              "_active": false,
-              "elements": []
-            },
-            {
-              "_type": "column",
-              "size": "1/1",
-              "_active": false,
-              "elements": []
-            },
-            {
-              "_type": "column",
-              "size": "1/1",
-              "_active": false,
-              "elements": []
-            }
           ]
         }
       ]

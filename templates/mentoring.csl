@@ -1,0 +1,253 @@
+﻿{
+  "title": "mentoring",
+  "elements": [
+    {
+      "_type": "section",
+      "title": "Section 1",
+      "elements": [
+        {
+          "_type": "row",
+          "_column_layout": "1/1",
+          "elements": [
+            {
+              "_type": "column",
+              "_active": true,
+              "size": "1/1",
+              "elements": [
+                {
+                  "_type": "text",
+                  "elements": [],
+                  "content": "[x_dropcap]C[/x_dropcap]oaching &amp; Mentoring para desenvolver e conectar com os parceiros e programas de aceleração, para adquirir o conhecimento e o expertise para crescer de forma consistente.\nAs atividades exercidas pela <strong>INFINITEPAR</strong> no apoio as empresas buscam atender as seguintes áreas:"
+                }
+              ]
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            }
+          ]
+        },
+        {
+          "_type": "row",
+          "_column_layout": "1/1",
+          "elements": [
+            {
+              "_type": "column",
+              "_active": true,
+              "size": "1/1",
+              "elements": [
+                {
+                  "_type": "image",
+                  "elements": [],
+                  "src": "http://infinitepar.dev/infinitepar/www/wp-content/uploads/2016/07/atividades.png"
+                }
+              ],
+              "style": "text-align: center;"
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            }
+          ]
+        },
+        {
+          "_type": "row",
+          "_column_layout": "1/1",
+          "elements": [
+            {
+              "_type": "column",
+              "_active": true,
+              "size": "1/1",
+              "elements": [
+                {
+                  "_type": "text",
+                  "elements": [],
+                  "content": "Além disso os empreendedores fundadores participam do conselho de empreendedores <strong>INFINITEPAR</strong>, onde seus conhecimentos e experiências são estimulados para reforçar a cooperação e apoio entre seus membros.\n\nO que o nosso modelo oferece?"
+                }
+              ]
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            }
+          ]
+        },
+        {
+          "_type": "row",
+          "title": "New Item 4",
+          "_column_layout": "1/1",
+          "elements": [
+            {
+              "_type": "column",
+              "_active": true,
+              "size": "1/1",
+              "elements": [
+                {
+                  "_type": "icon-list",
+                  "elements": [
+                    {
+                      "title": "Juntar as forças para uma aprendizagem real;",
+                      "type": "chevron-circle-right",
+                      "_type": "icon-list-item",
+                      "elements": []
+                    },
+                    {
+                      "title": "Despertar o interesse da indústria em busca de soluções econômicas e sociais através da inovação;",
+                      "type": "chevron-circle-right",
+                      "_type": "icon-list-item",
+                      "elements": []
+                    },
+                    {
+                      "title": "Reconhecer os Recursos Humanos, materiais e financeiros;",
+                      "type": "chevron-circle-right",
+                      "_type": "icon-list-item",
+                      "elements": []
+                    },
+                    {
+                      "title": "Aumentar a possibilidade de sucesso nos negócios;",
+                      "type": "chevron-circle-right",
+                      "_type": "icon-list-item",
+                      "elements": []
+                    },
+                    {
+                      "title": "Permitir a obtenção de recursos e incentivos para negócios;",
+                      "type": "chevron-circle-right",
+                      "_type": "icon-list-item",
+                      "elements": []
+                    },
+                    {
+                      "title": "Estimular o processo participativo e democrático nas decisões;",
+                      "type": "chevron-circle-right",
+                      "_type": "icon-list-item",
+                      "elements": []
+                    },
+                    {
+                      "title": "Multiplicação dos investimentos realizados;",
+                      "type": "chevron-circle-right",
+                      "_type": "icon-list-item",
+                      "elements": []
+                    },
+                    {
+                      "title": "Diminuir os riscos em segmentos e negócios diversos;",
+                      "type": "chevron-circle-right",
+                      "_type": "icon-list-item",
+                      "elements": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

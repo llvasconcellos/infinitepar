@@ -1,0 +1,726 @@
+﻿{
+  "title": "network-partners",
+  "elements": [
+    {
+      "_type": "section",
+      "title": "Section 1",
+      "elements": [
+        {
+          "_type": "row",
+          "_column_layout": "1/1",
+          "elements": [
+            {
+              "_type": "column",
+              "_active": true,
+              "size": "1/1",
+              "elements": [
+                {
+                  "_type": "text",
+                  "elements": [],
+                  "content": "[x_dropcap]A[/x_dropcap] INFINITEPAR se orgulha em manter relacionamentos profissionais no desenvolvimento de negócios e projetos, com empresas de referências em setores estratégicos. Conheça algumas delas:"
+                }
+              ]
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "_type": "section",
+      "title": "Section 2",
+      "elements": [
+        {
+          "_type": "row",
+          "_column_layout": "1/1",
+          "elements": [
+            {
+              "_type": "column",
+              "_active": true,
+              "size": "1/1",
+              "elements": [
+                {
+                  "_type": "custom-headline",
+                  "elements": [],
+                  "content": "Business Partners",
+                  "accent": true,
+                  "level": "h3"
+                }
+              ]
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            }
+          ]
+        },
+        {
+          "_type": "row",
+          "title": "New Item 2",
+          "_column_layout": "1/1",
+          "elements": [
+            {
+              "_type": "column",
+              "_active": true,
+              "size": "1/1",
+              "elements": [
+                {
+                  "_type": "feature-list",
+                  "elements": [
+                    {
+                      "title": "GARRIDO & TOZZI ADVOGADOS ASSOCIADOS",
+                      "text": "This is an Feature List Item that is part of an Feature List. Notice the connector between the three graphics to show that they are related.",
+                      "graphic_shape": "hexagon",
+                      "graphic_icon": "building",
+                      "graphic_icon_color": "#3498db",
+                      "graphic_icon_bg_color": "#272727",
+                      "_type": "feature-list-item",
+                      "elements": [],
+                      "href": "http://www.garridoetozzi.com.br",
+                      "link_text": "www.garridoetozzi.com.br",
+                      "content": "is a Brazilian lawyers firm …. etc<br/>",
+                      "graphic_bg_color": "#25265d",
+                      "graphic_color": "hsla(0, 0%, 100%, 0.95)",
+                      "href_title": "www.garridoetozzi.com.br",
+                      "href_target": true
+                    },
+                    {
+                      "title": "ICITIES SMART CITIES S.A.",
+                      "text": "This is an Feature List Item that is part of an Feature List. Notice the connector between the three graphics to show that they are related.",
+                      "graphic_shape": "hexagon",
+                      "graphic_icon": "building",
+                      "graphic_icon_color": "#3498db",
+                      "graphic_icon_bg_color": "#272727",
+                      "_type": "feature-list-item",
+                      "elements": [],
+                      "href": "http://www.icities.com.br",
+                      "link_text": "www.icities.com.br",
+                      "content": "the most important smart cities consulting company in south America etc…<br/>",
+                      "graphic_bg_color": "#25265d",
+                      "graphic_color": "hsla(0, 0%, 100%, 0.95)",
+                      "href_title": "www.icities.com.br",
+                      "href_target": true
+                    },
+                    {
+                      "title": "VENTIURE ACELERADORA",
+                      "text": "This is an Feature List Item that is part of an Feature List. Notice the connector between the three graphics to show that they are related.",
+                      "graphic_icon": "building",
+                      "graphic_icon_color": "#3498db",
+                      "graphic_icon_bg_color": "#272727",
+                      "_type": "feature-list-item",
+                      "elements": [],
+                      "href": "http://ventiur.net",
+                      "link_text": "ventiur.net",
+                      "content": "acceleration company with focus in corporate venture consulting etc….<br/>",
+                      "graphic_bg_color": "#25265d",
+                      "graphic_color": "hsla(0, 0%, 100%, 0.95)",
+                      "href_title": "ventiur.net",
+                      "href_target": true,
+                      "graphic_border_color": "hsl(0, 71%, 39%)",
+                      "graphic_shape": "hexagon"
+                    },
+                    {
+                      "title": "FRAMEWORK – PROJECT THINKING",
+                      "text": "This is an Feature List Item that is part of an Feature List. Notice the connector between the three graphics to show that they are related.",
+                      "graphic_icon": "building",
+                      "graphic_icon_color": "#3498db",
+                      "graphic_icon_bg_color": "#272727",
+                      "_type": "feature-list-item",
+                      "elements": [],
+                      "href": "http://www.frameworkgp.com.br",
+                      "link_text": "www.frameworkgp.com.br",
+                      "content": "this consulting company provides an immersive innovation activities thru project management and design thinking to rethink business models and strategics etc…<br/>",
+                      "graphic_bg_color": "#25265d",
+                      "graphic_color": "hsla(0, 0%, 100%, 0.95)",
+                      "href_title": "www.frameworkgp.com.br",
+                      "href_target": true,
+                      "graphic_border_color": "hsl(0, 71%, 39%)",
+                      "graphic_shape": "hexagon"
+                    },
+                    {
+                      "title": "DOITY PLATAFORMA DE GESTÃO DE EVENTOS",
+                      "text": "This is an Feature List Item that is part of an Feature List. Notice the connector between the three graphics to show that they are related.",
+                      "graphic_icon": "building",
+                      "graphic_icon_color": "#3498db",
+                      "graphic_icon_bg_color": "#272727",
+                      "_type": "feature-list-item",
+                      "elements": [],
+                      "href": "https://www.doity.com.br/",
+                      "link_text": "www.doity.com.br",
+                      "content": "its a  events management plataform with nationwide activities in Brasil … etc…<br/>",
+                      "graphic_bg_color": "#25265d",
+                      "graphic_color": "hsla(0, 0%, 100%, 0.95)",
+                      "href_title": "www.doity.com.br",
+                      "href_target": true,
+                      "graphic_border_color": "hsl(0, 71%, 39%)",
+                      "graphic_shape": "hexagon"
+                    }
+                  ],
+                  "graphic_size": "50px"
+                }
+              ]
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "_type": "section",
+      "title": "Section 3",
+      "elements": [
+        {
+          "_type": "row",
+          "_column_layout": "1/1",
+          "elements": [
+            {
+              "_type": "column",
+              "_active": true,
+              "size": "1/1",
+              "elements": [
+                {
+                  "_type": "custom-headline",
+                  "elements": [],
+                  "content": "Strategic Network",
+                  "accent": true,
+                  "level": "h3"
+                }
+              ]
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            }
+          ]
+        },
+        {
+          "_type": "row",
+          "title": "New Item 3",
+          "_column_layout": "1/1",
+          "elements": [
+            {
+              "_type": "column",
+              "_active": true,
+              "size": "1/1",
+              "elements": [
+                {
+                  "_type": "text",
+                  "elements": [],
+                  "content": "A INFINITEPAR esta engajada em promover o empreendedorismo há mais de três décadas no Brasil, e ao longo desse tempo desenvolveu e apoiou a criação de grupos e entidades importantes, as quais continua a apoiar e colaborar como :"
+                }
+              ]
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            }
+          ]
+        },
+        {
+          "_type": "row",
+          "title": "New Item 2",
+          "_column_layout": "1/1",
+          "elements": [
+            {
+              "_type": "column",
+              "_active": true,
+              "size": "1/1",
+              "elements": [
+                {
+                  "_type": "feature-list",
+                  "elements": [
+                    {
+                      "title": "CONJOVE- ACRJ",
+                      "text": "This is an Feature List Item that is part of an Feature List. Notice the connector between the three graphics to show that they are related.",
+                      "graphic_shape": "hexagon",
+                      "graphic_icon": "building",
+                      "graphic_icon_color": "#3498db",
+                      "graphic_icon_bg_color": "#272727",
+                      "_type": "feature-list-item",
+                      "elements": [],
+                      "href": "http://www.acrj.org.br",
+                      "content": "Conselho de Jovens Empresários da Associação Comercial do Rio de Janeiro.<br/>",
+                      "graphic_bg_color": "#25265d",
+                      "graphic_color": "hsla(0, 0%, 100%, 0.95)",
+                      "href_title": "www.acrj.org.br",
+                      "href_target": true,
+                      "link_text": "www.acrj.org.br"
+                    },
+                    {
+                      "title": "CONAJE",
+                      "text": "This is an Feature List Item that is part of an Feature List. Notice the connector between the three graphics to show that they are related.",
+                      "graphic_shape": "hexagon",
+                      "graphic_icon": "building",
+                      "graphic_icon_color": "#3498db",
+                      "graphic_icon_bg_color": "#272727",
+                      "_type": "feature-list-item",
+                      "elements": [],
+                      "href": "http://conaje.com.br/",
+                      "link_text": "conaje.com.br",
+                      "content": "Confederação Nacional de Jovens Empresários.<br/>",
+                      "graphic_bg_color": "#25265d",
+                      "graphic_color": "hsla(0, 0%, 100%, 0.95)",
+                      "href_title": "conaje.com.br",
+                      "href_target": true
+                    },
+                    {
+                      "title": "ACRJ",
+                      "text": "This is an Feature List Item that is part of an Feature List. Notice the connector between the three graphics to show that they are related.",
+                      "graphic_icon": "building",
+                      "graphic_icon_color": "#3498db",
+                      "graphic_icon_bg_color": "#272727",
+                      "_type": "feature-list-item",
+                      "elements": [],
+                      "href": "http://www.acrj.org.br",
+                      "link_text": "www.acrj.org.br",
+                      "content": "Associação Comercial do Rio de Janeiro.<br/>",
+                      "graphic_bg_color": "#25265d",
+                      "graphic_color": "hsla(0, 0%, 100%, 0.95)",
+                      "href_title": "www.acrj.org.br",
+                      "href_target": true,
+                      "graphic_border_color": "hsl(0, 71%, 39%)",
+                      "graphic_shape": "hexagon"
+                    },
+                    {
+                      "title": "GAVEA ANGELS",
+                      "text": "This is an Feature List Item that is part of an Feature List. Notice the connector between the three graphics to show that they are related.",
+                      "graphic_icon": "building",
+                      "graphic_icon_color": "#3498db",
+                      "graphic_icon_bg_color": "#272727",
+                      "_type": "feature-list-item",
+                      "elements": [],
+                      "href": "http://www.gaveaangels.org.br",
+                      "link_text": "www.gaveaangels.org.br",
+                      "content": "The first angels investors group of South America.<br/>",
+                      "graphic_bg_color": "#25265d",
+                      "graphic_color": "hsla(0, 0%, 100%, 0.95)",
+                      "href_title": "www.gaveaangels.org.br",
+                      "href_target": true,
+                      "graphic_border_color": "hsl(0, 71%, 39%)",
+                      "graphic_shape": "hexagon"
+                    },
+                    {
+                      "title": "ABS",
+                      "text": "This is an Feature List Item that is part of an Feature List. Notice the connector between the three graphics to show that they are related.",
+                      "graphic_icon": "building",
+                      "graphic_icon_color": "#3498db",
+                      "graphic_icon_bg_color": "#272727",
+                      "_type": "feature-list-item",
+                      "elements": [],
+                      "href": "https://www.abstartups.com.br",
+                      "link_text": "www.abstartups.com.br",
+                      "content": "Associação Brasileira de Startups.<br/>",
+                      "graphic_bg_color": "#25265d",
+                      "graphic_color": "hsla(0, 0%, 100%, 0.95)",
+                      "href_title": "www.abstartups.com.br",
+                      "href_target": true,
+                      "graphic_border_color": "hsl(0, 71%, 39%)",
+                      "graphic_shape": "hexagon"
+                    },
+                    {
+                      "title": "B+E",
+                      "text": "This is an Feature List Item that is part of an Feature List. Notice the connector between the three graphics to show that they are related.",
+                      "graphic_icon": "building",
+                      "graphic_icon_color": "#3498db",
+                      "graphic_icon_bg_color": "#272727",
+                      "_type": "feature-list-item",
+                      "elements": [],
+                      "href": "http://www.brasilmaisempreendedor.com.br",
+                      "link_text": "www.brasilmaisempreendedor.com.br",
+                      "content": "Brasil Mais Empreendedor.<br/>",
+                      "graphic_bg_color": "#25265d",
+                      "graphic_color": "hsla(0, 0%, 100%, 0.95)",
+                      "href_title": "www.brasilmaisempreendedor.com.br",
+                      "href_target": true,
+                      "graphic_border_color": "hsl(0, 71%, 39%)",
+                      "graphic_shape": "hexagon"
+                    },
+                    {
+                      "title": "YABT BRASIL",
+                      "text": "This is an Feature List Item that is part of an Feature List. Notice the connector between the three graphics to show that they are related.",
+                      "graphic_icon": "building",
+                      "graphic_icon_color": "#3498db",
+                      "graphic_icon_bg_color": "#272727",
+                      "_type": "feature-list-item",
+                      "elements": [],
+                      "href": "http://www.yabt.net",
+                      "link_text": "www.yabt.net",
+                      "content": "Young Americans Business Trust.<br/>",
+                      "graphic_bg_color": "#25265d",
+                      "graphic_color": "hsla(0, 0%, 100%, 0.95)",
+                      "href_title": "www.yabt.net",
+                      "href_target": true,
+                      "graphic_border_color": "hsl(0, 71%, 39%)",
+                      "graphic_shape": "hexagon"
+                    },
+                    {
+                      "title": "CIRCUITO STARTUP",
+                      "text": "This is an Feature List Item that is part of an Feature List. Notice the connector between the three graphics to show that they are related.",
+                      "graphic_icon": "building",
+                      "graphic_icon_color": "#3498db",
+                      "graphic_icon_bg_color": "#272727",
+                      "_type": "feature-list-item",
+                      "elements": [],
+                      "href": "http://circuitostartup.com/",
+                      "link_text": "circuitostartup.com",
+                      "content": "Rede de negócios para apoio a empreendedores e criação de startups.<br/>",
+                      "graphic_bg_color": "#25265d",
+                      "graphic_color": "hsla(0, 0%, 100%, 0.95)",
+                      "href_title": "circuitostartup.com",
+                      "href_target": true,
+                      "graphic_border_color": "hsl(0, 71%, 39%)",
+                      "graphic_shape": "hexagon"
+                    }
+                  ],
+                  "graphic_size": "50px"
+                }
+              ]
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "_type": "section",
+      "title": "Section 4",
+      "elements": [
+        {
+          "_type": "row",
+          "_column_layout": "1/1",
+          "elements": [
+            {
+              "_type": "column",
+              "_active": true,
+              "size": "1/1",
+              "elements": [
+                {
+                  "_type": "custom-headline",
+                  "elements": [],
+                  "content": "International Partners",
+                  "accent": true,
+                  "level": "h3"
+                }
+              ]
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            }
+          ]
+        },
+        {
+          "_type": "row",
+          "title": "New Item 2",
+          "_column_layout": "1/1",
+          "elements": [
+            {
+              "_type": "column",
+              "_active": true,
+              "size": "1/1",
+              "elements": [
+                {
+                  "_type": "feature-list",
+                  "elements": [
+                    {
+                      "title": "TMC - TREND MEDIA CITY – LAGOS – NIGERIA",
+                      "text": "This is an Feature List Item that is part of an Feature List. Notice the connector between the three graphics to show that they are related.",
+                      "graphic_shape": "hexagon",
+                      "graphic_icon": "building",
+                      "graphic_icon_color": "#3498db",
+                      "graphic_icon_bg_color": "#272727",
+                      "_type": "feature-list-item",
+                      "elements": [],
+                      "href": "http://www.trendmediacity.com/overview.php",
+                      "link_text": "http://www.trendmediacity.com/overview.php",
+                      "content": "TMC is a US$4billion project that will build a intelligent smart city in Nigeria, Africa, and will become a working hub, home and notable center for today's creative economy. An innovation development center, a technology cluster, a media hub, an entertainment center, a film park, a city of international conventions and important celebrity events, attracting and retaining some of the world's best talents and entrepreneurs of Artificial Intelligence, Robotics, Tv and Film Production, Computer Sciences, Space Engineering and all the most important technologies created by humans. TMC has the leading Nigerian and headstrong entrepreneur Uzo Udemba as CEO.<br/>",
+                      "graphic_bg_color": "#25265d",
+                      "graphic_color": "hsla(0, 0%, 100%, 0.95)",
+                      "href_title": "http://www.trendmediacity.com/overview.php",
+                      "href_target": true
+                    },
+                    {
+                      "title": "AWM INTERACTIVE – MIAMI – USA",
+                      "text": "This is an Feature List Item that is part of an Feature List. Notice the connector between the three graphics to show that they are related.",
+                      "graphic_shape": "hexagon",
+                      "graphic_icon": "building",
+                      "graphic_icon_color": "#3498db",
+                      "graphic_icon_bg_color": "#272727",
+                      "_type": "feature-list-item",
+                      "elements": [],
+                      "href": "http://www.awminteractive.com/",
+                      "link_text": "www.awminteractive.com",
+                      "content": "A sales powerhouse for the B2B arena. Providing extra support for the sales processes and sales efforts through enablement, development and follow up services. Specialized in creating and executing B2B Sales Campaigns to reach the right persons within the targeted organizations. Sales campaigns are supported by marketing initiatives and activities that help drive your company sales.<br/>",
+                      "graphic_bg_color": "#25265d",
+                      "graphic_color": "hsla(0, 0%, 100%, 0.95)",
+                      "href_title": "www.awminteractive.com",
+                      "href_target": true
+                    },
+                    {
+                      "title": "CAMPUS PARTY MEXICO – GUADALAJARA – MEXICO",
+                      "text": "This is an Feature List Item that is part of an Feature List. Notice the connector between the three graphics to show that they are related.",
+                      "graphic_icon": "building",
+                      "graphic_icon_color": "#3498db",
+                      "graphic_icon_bg_color": "#272727",
+                      "_type": "feature-list-item",
+                      "elements": [],
+                      "href": "http://mexico.campus-party.org/",
+                      "link_text": "mexico.campus-party.org",
+                      "content": "The biggest Campus Party in te world with more then 20 thousand campuseros, has also the record recognition of the biggest hackaton in world by The Guinness Book of Records, with 274 teams of entrepreneurs. CPMx has the entrepreneur Raul Martin conducting this unique and amazing internet & technology event since 2009.<br/>",
+                      "graphic_bg_color": "#25265d",
+                      "graphic_color": "hsla(0, 0%, 100%, 0.95)",
+                      "href_title": "mexico.campus-party.org",
+                      "href_target": true,
+                      "graphic_border_color": "hsl(0, 71%, 39%)",
+                      "graphic_shape": "hexagon"
+                    },
+                    {
+                      "title": "TIC AMERICAS - Washington/DC - USA",
+                      "text": "This is an Feature List Item that is part of an Feature List. Notice the connector between the three graphics to show that they are related.",
+                      "graphic_icon": "building",
+                      "graphic_icon_color": "#3498db",
+                      "graphic_icon_bg_color": "#272727",
+                      "_type": "feature-list-item",
+                      "elements": [],
+                      "href": "http://ticamericas.net/",
+                      "link_text": "ticamericas.net",
+                      "content": "The Talent and Innovation Competition of the Americas (TIC Americas) organized by the Young Americas Business Trust (YABT) is a business accelerator platform for young entrepreneurs to foster their business ideas and start-ups. TIC Americas provides guidance, training, mentoring, seed capital, investment and a wide international network.<br/>",
+                      "graphic_bg_color": "#25265d",
+                      "graphic_color": "hsla(0, 0%, 100%, 0.95)",
+                      "href_title": "ticamericas.net",
+                      "href_target": true,
+                      "graphic_border_color": "hsl(0, 71%, 39%)",
+                      "graphic_shape": "hexagon"
+                    }
+                  ],
+                  "graphic_size": "50px"
+                }
+              ]
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+﻿{
+  "title": "biz-expertises",
+  "elements": [
+    {
+      "_type": "section",
+      "title": "Section 1",
+      "elements": [
+        {
+          "_type": "row",
+          "_column_layout": "1/2 + 1/2",
+          "elements": [
+            {
+              "_type": "column",
+              "_active": true,
+              "size": "1/2",
+              "elements": [
+                {
+                  "_type": "text",
+                  "elements": [],
+                  "content": "<h4>Para Empreendedores de Alto Impacto</h4>\n\nCoaching & Mentoring para desenvolver e conectar com os parceiros e programas de aceleração, para adquirir o conhecimento e o expertise para crescer de forma consistente.\n<!--a href=\"?page_id=194\">Saiba Mais</a-->"
+                },
+                {
+                  "_type": "button",
+                  "elements": [],
+                  "href": "?page_id=194",
+                  "content": "Saiba Mais",
+                  "href_title": "Saiba Mais",
+                  "button_size": "small"
+                }
+              ]
+            },
+            {
+              "_type": "column",
+              "size": "1/2",
+              "_active": true,
+              "elements": [
+                {
+                  "_type": "image",
+                  "elements": [],
+                  "image_style": "circle",
+                  "class": "biz-redondo",
+                  "src": "http://infinitepar.dev/infinitepar/www/wp-content/uploads/2016/06/promo-inovacao.jpg"
+                }
+              ]
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            }
+          ],
+          "style": "background: url('http://infinitepar.dev/infinitepar/www/wp-content/uploads/2016/07/timeline-gray-right.png') center;"
+        },
+        {
+          "_type": "row",
+          "_column_layout": "1/2 + 1/2",
+          "elements": [
+            {
+              "_type": "column",
+              "_active": true,
+              "size": "1/2",
+              "elements": [
+                {
+                  "_type": "image",
+                  "elements": [],
+                  "src": "http://infinitepar.dev/infinitepar/www/wp-content/uploads/2016/07/laptop-900646.jpg",
+                  "class": "biz-redondo",
+                  "image_style": "circle"
+                }
+              ]
+            },
+            {
+              "_type": "column",
+              "size": "1/2",
+              "_active": true,
+              "elements": [
+                {
+                  "_type": "text",
+                  "elements": [],
+                  "content": "<h4>Para oportunidades de Negocios  e Investidores</h4>\n\nNós fornecemos uma ampla gama de serviços para ajudá-lo a encontrar oportunidades de investimento, aquisição de negócios ou distribuição de vendas no Brasil e América do Sul.\nTemos uma grande carteira de importantes empresas e startups inovadoras com equipes sólidas e alto potencial de crescimento."
+                }
+              ]
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            }
+          ],
+          "style": "background: url('http://infinitepar.dev/infinitepar/www/wp-content/uploads/2016/07/timeline-gray-left.png') center;"
+        },
+        {
+          "_type": "row",
+          "_column_layout": "1/2 + 1/2",
+          "elements": [
+            {
+              "_type": "column",
+              "_active": true,
+              "size": "1/2",
+              "elements": [
+                {
+                  "_type": "text",
+                  "elements": [],
+                  "content": "<h4>Para todas as industrias e segmentos</h4>\n\nNós ajudamos a aplicar as metodologias mais inovadoras para reinventar o seu negócio. Trabalhamos com as mesmas soluções e ferramentas que fazem empresas disruptivas e exponenciais como UBER, Airbnb, GOOGLE, TESLA, Apple e Verizon serem as empresas mais valiosas do mundo no momento. Nós lhe ensinamos a redesenhar uma nova maneira de olhar e construir oportunidades de mercado para inovar o seu negócio e obter resultados de alto impacto."
+                }
+              ]
+            },
+            {
+              "_type": "column",
+              "size": "1/2",
+              "_active": true,
+              "elements": [
+                {
+                  "_type": "image",
+                  "elements": [],
+                  "class": "biz-redondo",
+                  "src": "http://infinitepar.dev/infinitepar/www/wp-content/uploads/2016/07/Big-Firm-Experience.jpg",
+                  "image_style": "circle"
+                }
+              ]
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            },
+            {
+              "_type": "column",
+              "size": "1/1",
+              "_active": false,
+              "elements": []
+            }
+          ],
+          "style": "background: url('http://infinitepar.dev/infinitepar/www/wp-content/uploads/2016/07/timeline-gray-right.png') center;"
+        }
+      ]
+    }
+  ]
+}
